@@ -1,0 +1,115 @@
+.products {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 10px 10px;
+  margin: 20px;
+  background-color: #f8f8f8;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 30vw;
+  height: 40vh;
+}
+
+.card img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
+
+.card .card-title {
+  font-size: 2.5vw;
+  color: #696969;
+  font-weight: 800;
+}
+
+.card .card-text {
+  font-size: 1.1vw;
+  color: #696969;
+  font-weight: 400;
+}
+
+.card .btn {
+  border-radius: 50px;
+  padding: 10px 10px;
+  color: #696969;
+}
+
+@media (max-width: 1050px) {
+  .products {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 10px 10px;
+    margin: 20px;
+    background-color: #f8f8f8;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 40vw;
+    height: 30vh;
+  }
+
+  .card img {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+  }
+  .card .card-title {
+    font-size: 3vw;
+    color: #696969;
+    font-weight: 800;
+  }
+  .card .card-text {
+    font-size: 2.5vw;
+    color: #696969;
+    font-weight: 400;
+  }
+  .card .btn {
+    border-radius: 50px;
+    padding: 10px 10px;
+    color: #696969;
+  }
+}
+
+@media (max-width: 500px) {
+  .products {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 10px 10px;
+    margin: 20px;
+    background-color: #f8f8f8;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 100vw;
+    height: 30vh;
+  }
+
+  .card img {
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+  }
+  .card .card-title {
+    font-size: 5vw;
+    color: #696969;
+    font-weight: 800;
+  }
+  .card .card-text {
+    font-size: 3.5vw;
+    text-align: justify;
+    color: #696969;
+    font-weight: 500;
+  }
+  .card .btn {
+    border-radius: 50px;
+    padding: 15px 15px;
+    color: #696969;
+  }
+}

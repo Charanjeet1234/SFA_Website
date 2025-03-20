@@ -1,0 +1,125 @@
+.BusinessActivity {
+  padding: 20px 20px;
+  width: 100%;
+  background-color: #e8e8e8;
+  display: flex;
+  height: 100vh;
+  gap: 5vw;
+}
+.BusinessContent {
+  width: 60vw;
+  padding: 20px 20px;
+  color: #696969;
+  display: flex;
+  flex-direction: column;
+}
+
+.BusinessContent h1 {
+  font-size: 2.3vw;
+  color: #696969;
+  font-weight: 200;
+  padding: 10px 20px;
+}
+
+.BusinessContent p {
+  font-size: 1.1vw;
+  color: #696969;
+  font-weight: 200;
+  padding: 10px 20px;
+}
+.businessVideo {
+  width: 40vw;
+  padding: 20px 20px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.businessVideo video {
+  margin: 10px 10px;
+  height: 40vh;
+  width: 50vw;
+  border-radius: 20px;
+  box-shadow: 3px 6px 10px 10px;
+}
+
+@media (max-width: 1050px) {
+  .BusinessActivity {
+    padding: 10px 10px;
+    width: 100%;
+    background-color: #e8e8e8;
+    display: block;
+    height: auto;
+    gap: 5vw;
+  }
+  .BusinessContent {
+    width: 100vw;
+    padding: 20px 20px;
+    color: #696969;
+    display: flex;
+    flex-direction: column;
+  }
+  .BusinessContent h1 {
+    font-size: 3vw;
+    color: #696969;
+    font-weight: 400;
+    padding: 10px 20px;
+  }
+  .BusinessContent p {
+    font-size: 2.3vw;
+    color: #696969;
+    font-weight: 300;
+    padding: 10px 20px;
+  }
+  .businessVideo {
+    width: 0vw;
+    padding: 10px 20px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .businessVideo video {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .BusinessActivity {
+    padding: 10px 10px;
+    width: 100%;
+    background-color: #e8e8e8;
+    display: block;
+    height: auto;
+    gap: 5vw;
+  }
+  .BusinessContent {
+    width: 100vw;
+    padding: 10px 10px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+  }
+  .BusinessContent h1 {
+    font-size: 5vw;
+    color: black;
+    font-weight: 600;
+    padding: 10px 20px;
+  }
+  .BusinessContent p {
+    font-size: 4vw;
+    color: black;
+    font-weight: 300;
+    padding: 10px 20px;
+  }
+  .businessVideo {
+    width: 0vw;
+    padding: 10px 20px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .businessVideo video {
+    display: none;
+  }
+}

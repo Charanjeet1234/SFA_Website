@@ -1,0 +1,150 @@
+.countdown
+{
+    display: flex;
+    height: auto;
+    width: 100vw;
+    padding: 20px 20px;
+    gap: 5vw;
+    
+}
+.customers
+{
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+}
+.customers h3 
+{
+    text-align: center;
+    color: #696969;
+    font-size: 2vw;
+    font-weight: 300;
+    animation: fadeIn 3s;
+
+}
+.deliver 
+{
+    display: flex;
+    flex-direction: column;
+    width: 45vw; 
+   
+}
+.deliver h3
+{
+    text-align: center;
+    color: #696969;
+    font-size: 2vw;
+    font-weight: 300;
+    animation: fadeIn 3s;
+}
+
+.title {
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 2.5vw;
+  margin-top: 5%;
+  color: #696969;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+  height: 30vh;
+}
+
+.title h2 {
+  font-size: 1.3vw;
+  color: #696969;
+  font-weight: 200;
+  padding: 20px 20px;
+}
+
+.Button {
+  float: right;
+  padding: 20px;
+  position: sticky;
+}
+
+@media (max-width: 1050px) {
+  .title {
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 2.5vw;
+    margin-top: 5%;
+    color: #696969;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    height: auto;
+  }
+  .title h2 {
+    font-size: 2.3vw;
+    color: #696969;
+    font-weight: 200;
+    padding: 10px 10px;
+    bottom: 10vh;
+  }
+}
+
+@media (max-width: 900px) {
+  .title {
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 2.5vw;
+    margin-top: 5%;
+    color: #696969;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    height: auto;
+  }
+  .title h2 {
+    font-size: 2.3vw;
+    color: #696969;
+    font-weight: 200;
+    padding: 10px 10px;
+    bottom: 10vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 5%;
+    color: black;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    height: auto;
+  }
+  .title h2 {
+    font-size: 3.7vw;
+    text-align: justify;
+    color: black;
+    font-weight: 300;
+    padding: 0px 20px;
+    margin-top: -4vh;
+  }
+  .customers h3 
+{   
+    text-align: center;
+    color: black;
+    font-size: 4vw;
+    font-weight:300;
+    animation: fadeIn 3s;
+
+}
+.deliver h3 
+{
+    text-align: center;
+    color: black;
+    font-size: 4vw;
+    font-weight:300;
+    animation: fadeIn 3s;
+}
+}
+

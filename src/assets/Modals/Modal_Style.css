@@ -1,0 +1,55 @@
+.modal {
+  width: 90vw;
+  height: auto;
+}
+
+.modal-dialog {
+  width: 80vw;
+  margin: auto;
+}
+.modal-body p {
+  font-size: 1.1vw;
+  color: #696969;
+}
+
+.modal-body ul li {
+  font-size: 1.1vw;
+  color: #696969;
+}
+.ManganeseSpecification {
+  display: flex;
+  gap: 1vw;
+}
+
+.modal-body h5 {
+  font-size: 1.5vw;
+  padding: 5px;
+  color: black;
+}
+.ManganeseSpecification table {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 20px 20px;
+}
+
+.ManganeseSpecification table thead tr th {
+  color: #696969;
+}
+
+@media (max-width: 1050px) {
+  .modal-body p {
+    font-size: 3.5vw;
+    color: #696969;
+  }
+
+  .modal-body ul li {
+    font-size: 4vw;
+    color: #696969;
+  }
+  .modal-body h5 {
+    font-size: 4vw;
+    padding: 5px;
+    color: black;
+    font-weight: 800;
+  }
+}
