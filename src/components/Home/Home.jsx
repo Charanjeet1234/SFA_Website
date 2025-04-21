@@ -25,7 +25,7 @@ function Home() {
   }, []);
   return (
     <>
-      <Banner pdfFileName="Alloy_Specifications.pdf" />
+      <Banner pdfFileName="FerroAlloys_Specifications.pdf" />
       <br />
       <div className="countdown">
         <div className="customers">
