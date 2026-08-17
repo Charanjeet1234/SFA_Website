@@ -18,9 +18,9 @@ const Banner = ({pdfFileName}) => {
        <div className="left"><h1>WE ARE EXPERTS IN</h1>
        <p>DELIVERING HIGH QUALITY FERRO ALLOYS PRODUCTS</p>
        <div className="button">
-       <a href ="mailto:sfa.globex@gmail.com"><button type="button" className="btn btn-light">Inquiry</button></a>
+       <a href ="mailto:sfa.globex@gmail.com"><button type="button" className="btn btn-light ">Inquiry</button></a>
        <a href="#products"><button type="button" className="btn btn-light">Explore Our Products</button></a>
-       <button onClick={handleDownload} type="button" className="btn btn-light">Download Product Specification </button>
+       <button onClick={handleDownload} id="btndownload" type="button" className="btn btn-light ">Download Product Specification </button>
        </div>
        </div> 
      </div>

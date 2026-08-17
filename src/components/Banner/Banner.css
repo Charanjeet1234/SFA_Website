@@ -1,3 +1,5 @@
+
+
 .banner {
   display: flex;
   margin: 20px 20px;
@@ -42,7 +44,7 @@
   animation: fadeIn 3s;
 }
 
-.button .btn {
+.button .btn .btndownload {
   border: none;
   background-color: #f8f8f8;
   color: #696969;
@@ -115,13 +117,35 @@
     animation: fadeIn 3s;
   }
 
-  .button .btn {
-    border: none;
+  .button .btn .btndownload {
+    /* border: none;
     background-color: #f8f8f8;
     color: black;
     padding: 2.5vw 2.5vw;
     font-size: 2.6vw;
     font-weight: 400;
-    border-radius: 50px;
+    border-radius: 50px; */
+    border: none;
+  background-color: #f8f8f8;
+  color: black;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+/* Optional: Hover effect */
+.button  .btn:hover  {
+  background-color: #e0e0e0;
+}
+
+/* Small tweaks for mobile screens */
+@media (max-width: 500px) {
+  .button .btn {
+   display: none;
   }
+ }
 }
