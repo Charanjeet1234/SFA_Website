@@ -1,4 +1,4 @@
-/* .Navbar {
+/* /* .Navbar {
   padding: 20px 60px;
   display: flex;
   justify-content: space-between;
@@ -78,9 +78,303 @@
     font-size: 11px;
     padding: 0px 5px;
   }
-} */
+} 
 
 
 .nav-item {
   text-align: center;
+} */
+
+/* ========================================
+   SFA GLOBEX NAVBAR
+======================================== */
+
+.custom-navbar {
+  width: 100%;
+  background: #ffffff;
+  padding: 15px 60px;
+  border-bottom: none;
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar-container {
+  width: 100%;
+  min-height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* ========================================
+   LOGO
+======================================== */
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  display: block;
+}
+
+
+/* ========================================
+   DESKTOP MENU
+======================================== */
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: auto;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+
+  /* Secondary text color */
+  color: #5f5f5f;
+
+  font-size: 17px;
+  font-weight: 500;
+
+  transition: color 0.25s ease;
+}
+
+/* Home / first menu item */
+.navbar-menu a:first-child {
+  color: #0084c7;
+}
+
+.navbar-menu a:hover {
+  color: #0084c7;
+}
+
+
+/* ========================================
+   HAMBURGER BUTTON
+======================================== */
+
+.navbar-toggler {
+  display: none;
+
+  width: 60px;
+  height: 60px;
+
+  padding: 10px;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  margin-left: auto;
+}
+
+
+/* Hamburger Lines */
+
+.navbar-toggler span {
+  display: block;
+
+  width: 38px;
+  height: 4px;
+
+  background: #0084c7;
+
+  border-radius: 3px;
+
+  transition: all 0.3s ease;
+}
+
+
+/* ========================================
+   HAMBURGER → X ANIMATION
+======================================== */
+
+.navbar-toggler.menu-open {
+  gap: 0;
+}
+
+.navbar-toggler.menu-open span:nth-child(1) {
+  transform: rotate(45deg) translate(3px, 3px);
+}
+
+.navbar-toggler.menu-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggler.menu-open span:nth-child(3) {
+  transform: rotate(-45deg) translate(3px, -3px);
+}
+
+
+/* ========================================
+   TABLET / MOBILE
+======================================== */
+
+@media (max-width: 991px) {
+
+  .custom-navbar {
+    padding: 15px 30px;
+  }
+
+  .navbar-container {
+    min-height: 55px;
+  }
+
+  /* Show hamburger */
+
+  .navbar-toggler {
+    display: flex;
+  }
+
+
+  /* Mobile menu */
+
+  .navbar-menu {
+    display: none;
+
+    width: 100%;
+
+    flex-direction: column;
+    align-items: center;
+
+    gap: 0;
+
+    padding: 15px 0;
+
+    margin: 0;
+
+    background: #ffffff;
+
+    border-top: 1px solid #eeeeee;
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+  }
+
+
+  /* Menu opens and pushes banner down */
+
+  .navbar-menu.show {
+    display: flex;
+  }
+
+
+  /* Mobile links */
+
+  .navbar-menu a {
+    width: 100%;
+
+    padding: 15px 20px;
+
+    text-align: center;
+
+    font-size: 18px;
+
+    color: #5f5f5f;
+  }
+
+
+  /* First item */
+
+  .navbar-menu a:first-child {
+    color: #0084c7;
+  }
+
+
+  .navbar-menu a:hover {
+    background: #f2f9fc;
+    color: #0084c7;
+  }
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 500px) {
+
+  .custom-navbar {
+    padding: 12px 20px;
+  }
+
+  .navbar-container {
+    min-height: 55px;
+  }
+
+  .logo {
+    width: 90px;
+  }
+
+
+  /* Larger hamburger */
+
+  .navbar-toggler {
+    width: 65px;
+    height: 65px;
+
+    gap: 8px;
+  }
+
+  .navbar-toggler span {
+    width: 42px;
+    height: 4px;
+
+    background: #0084c7;
+  }
+
+
+  .navbar-menu {
+    padding: 10px 0;
+  }
+
+  .navbar-menu a {
+    font-size: 17px;
+    padding: 14px 20px;
+  }
+}
+
+
+/* ========================================
+   EXTRA SMALL MOBILE
+======================================== */
+
+@media (max-width: 400px) {
+
+  .custom-navbar {
+    padding: 10px 15px;
+  }
+
+  .logo {
+    width: 85px;
+  }
+
+  .navbar-toggler {
+    width: 65px;
+    height: 65px;
+  }
+
+  .navbar-toggler span {
+    width: 40px;
+    height: 4px;
+  }
+
+  .navbar-menu a {
+    font-size: 16px;
+    padding: 13px 20px;
+  }
 }
