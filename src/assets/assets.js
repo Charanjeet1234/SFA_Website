@@ -1,5 +1,4 @@
-
-import logo from './Sfa_Logo.png'
+import logo from './sfa_logo.png'
 import ferro_alloys from "./ferro_alloys.png"
 import Ferro_silicon from "./Ferro_silicon.jpg"
 import ferro_manganese from "./ferro-manganese-banner.jpg"
