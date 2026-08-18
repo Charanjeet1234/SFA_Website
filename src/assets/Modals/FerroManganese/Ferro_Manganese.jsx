@@ -1,6 +1,12 @@
 import React from "react";
-import "../Modal_Style.css"
+import "../Modal_Style.css";
+
 function Ferro_Manganese() {
+  const productName = "Ferro Manganese";
+  const whatsappLink = `https://wa.me/971524426170?text=${encodeURIComponent(
+    `Hello SFA Globex DMCC, I would like a quote for ${productName}. Please share pricing, specificication and availability.`,
+  )}`;
+
   return (
     <div
       className="modal fade"
@@ -148,9 +154,14 @@ function Ferro_Manganese() {
             >
               Close
             </button>
-            <button type="button" className="btn btn-light" data-bs-dismiss="modal">
-              Understood
-            </button>
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
+              Request Quote on WhatsApp
+            </a>
           </div>
         </div>
       </div>

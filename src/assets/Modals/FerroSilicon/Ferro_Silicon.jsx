@@ -1,6 +1,12 @@
-import React from 'react'
-import "../Modal_Style.css"
+import React from "react";
+import "../Modal_Style.css";
+
 function Ferro_Silicon() {
+  const productName = "Ferro Silicon";
+  const whatsappLink = `https://wa.me/971524426170?text=${encodeURIComponent(
+    `Hello SFA Globex DMCC, I would like a quote for ${productName}. Please share pricing, specification and availability.`,
+  )}`;
+
   return (
     <div
       className="modal fade"
@@ -15,7 +21,7 @@ function Ferro_Silicon() {
         <div className="modal-content">
           <div className="modal-header">
             <h1 className="modal-title fs-5" id="staticBackdropLabel">
-            Ferro Silicon
+              Ferro Silicon
             </h1>
             <button
               type="button"
@@ -26,7 +32,10 @@ function Ferro_Silicon() {
           </div>
           <div className="modal-body">
             <p>
-            Ferrosilicon (FeSi) is an alloy of silicon and iron, a product produced by DMS Powders. DMS Powders supplies milled and atomized ferrosilicon powders, specifically for use in the Dense Media Separation of Diamonds.
+              Ferrosilicon (FeSi) is an alloy of silicon and iron, a product
+              produced by DMS Powders. DMS Powders supplies milled and atomized
+              ferrosilicon powders, specifically for use in the Dense Media
+              Separation of Diamonds.
             </p>
           </div>
           <div className="modal-footer">
@@ -37,14 +46,19 @@ function Ferro_Silicon() {
             >
               Close
             </button>
-            <button type="button" className="btn btn-light" data-bs-dismiss="modal">
-              Understood
-            </button>
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
+              Request Quote on WhatsApp
+            </a>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Ferro_Silicon
+export default Ferro_Silicon;

@@ -1,6 +1,12 @@
-import React from 'react'
-import "../Modal_Style.css"
+import React from "react";
+import "../Modal_Style.css";
+
 function Ferro_Chrome() {
+  const productName = "Ferro Chrome";
+  const whatsappLink = `https://wa.me/971524426170?text=${encodeURIComponent(
+    `Hello SFA Globex DMCC, I would like a quote for ${productName}. Please share pricing, specification and availability.`,
+  )}`;
+
   return (
     <div
       className="modal fade"
@@ -15,7 +21,7 @@ function Ferro_Chrome() {
         <div className="modal-content">
           <div className="modal-header">
             <h1 className="modal-title fs-5" id="staticBackdropLabel">
-            Ferro Chrome
+              Ferro Chrome
             </h1>
             <button
               type="button"
@@ -26,9 +32,12 @@ function Ferro_Chrome() {
           </div>
           <div className="modal-body">
             <p>
-            Ferro Chrome is an alloy with 58% to 65% chrome, 8.5% max carbon, 0.05% max phosphorus, 4% max silicon and 0.05% max sulphur. With a chrome content from 60% minimum, there are several variations on High Carbon Ferro Chrome with carbon contents of.
+              Ferro Chrome is an alloy with 58% to 65% chrome, 8.5% max carbon,
+              0.05% max phosphorus, 4% max silicon and 0.05% max sulphur. With a
+              chrome content from 60% minimum, there are several variations on
+              High Carbon Ferro Chrome with carbon contents of.
             </p>
-            
+
             <h5>High carbon Ferro Chrome</h5>
             <div className="ManganeseSpecification">
               <table class="table bordered">
@@ -69,14 +78,19 @@ function Ferro_Chrome() {
             >
               Close
             </button>
-            <button type="button" className="btn btn-light" data-bs-dismiss="modal">
-              Understood
-            </button>
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
+              Request Quote on WhatsApp
+            </a>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Ferro_Chrome
+export default Ferro_Chrome;
