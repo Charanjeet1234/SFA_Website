@@ -39,12 +39,13 @@ function Home() {
       </div>
       <div className="title" id="home">
         <h2>
-          Ferro Alloys are alloys of iron with other elements like chromium,
-          manganese, silicon, tungsten, molybdenum or vanadium. Ferro Alloys are
-          essentially used to impart certain physical and chemical properties to
-          a particular grade of steel e.g. change in tensile strength,
-          ductility, hardness, corrosion, resistance, wear resistance or
-          abrasion resistance properties.
+          Ferro alloys are essential raw materials used in steelmaking to improve
+          strength, hardness, corrosion resistance, ductility, and wear
+          resistance. As a trusted ferro alloys supplier in Dubai, UAE, SFA
+          Globex DMCC delivers high-quality ferro manganese, silico manganese,
+          ferro chrome, ferro silicon, manganese ore, and ferro molybdenum to
+          steel producers across the Middle East, Europe, Africa, India, and the
+          Far East.
         </h2>
       </div>
       <div
