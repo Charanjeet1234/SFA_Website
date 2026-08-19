@@ -8,12 +8,11 @@ function About() {
       <div className="organisation">
         <h2>About SFA Globex DMCC</h2>
         <p>
-          SFA Globex DMCC is a Dubai-based ferro alloys supplier and trading
-          company serving steel producers, foundries, and industrial buyers across
-          the Indian subcontinent, Middle East, Europe, Turkey, Africa, and
-          India. With deep techno-commercial expertise, we supply
-          tailored ferro alloy solutions to meet complex production and quality
-          requirements.
+SFA Globex DMCC is a Dubai-based ferro alloys supplier and trading
+company serving steel producers, foundries, and industrial buyers across
+the Indian subcontinent, Middle East, Europe, Turkey, Africa, and
+India. With deep techno-commercial expertise, we supply tailored ferro
+alloy solutions to meet complex production and quality requirements.
         </p>
         <p>
           Our goal is to become a truly global industrial sourcing partner by

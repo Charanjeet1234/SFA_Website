@@ -5,7 +5,6 @@
     width: 100vw;
     padding: 20px 20px;
     gap: 5vw;
-    
 }
 .customers
 {
@@ -27,7 +26,7 @@
     display: flex;
     flex-direction: column;
     width: 45vw; 
-   
+    
 }
 .deliver h3
 {
@@ -201,22 +200,16 @@
     padding: 0px 20px;
     margin-top: -4vh;
   }
-  .customers h3 
-{   
+  .customers h3,
+  .deliver h3 {
     text-align: center;
     color: black;
     font-size: 4vw;
-    font-weight:300;
+    font-weight: 300;
     animation: fadeIn 3s;
-
-}
-.deliver h3 
-{
-    text-align: center;
-    color: black;
+  }
+  .deliver-label h3 {
     font-size: 4vw;
-    font-weight:300;
-    animation: fadeIn 3s;
+    color: black;
+  }
 }
-}
-

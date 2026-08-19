@@ -13,7 +13,7 @@ function Ferro_Chrome() {
       id="Ferro_Chrome"
       data-bs-backdrop="static"
       data-bs-keyboard="false"
-      tabindex="-1"
+      tabIndex="-1"
       aria-labelledby="staticBackdropLabel"
       aria-hidden="true"
     >
@@ -40,7 +40,7 @@ function Ferro_Chrome() {
 
             <h5>High carbon Ferro Chrome</h5>
             <div className="ManganeseSpecification">
-              <table class="table bordered">
+              <table className="table bordered">
                 <thead>
                   <tr>
                     <th scope="col">Specification</th>

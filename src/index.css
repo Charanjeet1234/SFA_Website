@@ -4,13 +4,26 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: outfit;
+  font-family: "Outfit", "Segoe UI", sans-serif;
+  scroll-behavior: smooth;
+}
+
+html {
   scroll-behavior: smooth;
 }
 
 body {
-  height: 100vh;
-  background-color: #f0f5f5;
+  min-height: 100vh;
+  background-color: #f3f7fb;
+  color: #122335;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 a {

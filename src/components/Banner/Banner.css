@@ -1,151 +1,234 @@
 
 
 .banner {
-  display: flex;
-  margin: 20px 20px;
-  height: 60vh;
-  width: 100vw;
-}
-
-.banner img {
-  margin: 20px;
-  width: 40vw;
-  height: 100%;
-  object-fit: cover;
-  animation: bounce 10s infinite;
+display: grid;
+grid-template-columns: 1.15fr 0.85fr;
+align-items: center;
+gap: 2rem;
+margin: 28px 20px 0;
+padding: 2.5rem 2rem;
+min-height: 560px;
+background: linear-gradient(135deg, rgba(14, 30, 63, 0.96), rgba(22, 51, 90, 0.92));
+border-radius: 28px;
+box-shadow: 0 30px 70px rgba(15, 23, 42, 0.18);
+overflow: hidden;
 }
 
 .left {
-  display: flex;
-  gap: 0.1vh;
-  flex-direction: column;
-  justify-content: center;
+display: flex;
+gap: 1rem;
+flex-direction: column;
+justify-content: center;
+padding: 1.25rem 0.5rem 1.25rem 0.75rem;
+position: relative;
+z-index: 1;
+}
+
+.eyebrow {
+display: inline-flex;
+align-self: flex-start;
+padding: 0.45rem 0.85rem;
+border-radius: 999px;
+background: rgba(96, 165, 250, 0.15);
+color: #cfe3ff;
+font-size: 0.75rem;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+font-weight: 700;
 }
 
 .left h1 {
-  font-size: 4vw;
-  align-items: center;
-  color: #696969;
-  font-weight: 400;
-  animation: fadeIn 3s;
+margin: 0;
+font-size: clamp(2.3rem, 4vw, 4.3rem);
+line-height: 1.08;
+color: #f8fbff;
+font-weight: 700;
+letter-spacing: -0.04em;
+animation: fadeIn 3s;
 }
 
 .left p {
-  font-size: 1.5vw;
-  color: #696969;
-  font-weight: 400;
-  animation: fadeIn 3s;
+margin: 0;
+max-width: 680px;
+font-size: clamp(1rem, 1.6vw, 1.45rem);
+line-height: 1.7;
+color: rgba(225, 233, 245, 0.9);
+font-weight: 400;
+animation: fadeIn 3s;
 }
 
 .button {
-  display: flex;
-  flex-direction: row;
-  gap: 1vw;
-  animation: fadeIn 3s;
+display: flex;
+flex-wrap: wrap;
+gap: 0.9rem;
+margin-top: 0.5rem;
+animation: fadeIn 3s;
 }
 
-.button .btn .btndownload {
-  border: none;
-  background-color: #f8f8f8;
-  color: #696969;
-  padding: 1vw 2vw;
-  font-size: 1.2vw;
-  border-radius: 50px;
+.button .btn {
+border: none;
+border-radius: 999px;
+padding: 0.9rem 1.4rem;
+font-size: 0.96rem;
+font-weight: 600;
+transition: all 0.25s ease;
 }
 
-.Coutdown {
-  display: flex;
-  border: 1px solid red;
-  padding-top: 20vh;
+.button .btn:hover {
+transform: translateY(-1px);
+box-shadow: 0 10px 24px rgba(15, 23, 42, 0.18);
 }
 
-.Coutdown h3 {
-  text-align: center;
-  justify-content: center;
-  color: #696969;
+.button .btn-light {
+background: #ffffff;
+color: #143a68;
 }
+
+.button #btndownload {
+background: rgba(255, 255, 255, 0.08);
+color: #ffffff;
+border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.banner-visual {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 420px;
+}
+
+.map-card {
+position: relative;
+width: min(100%, 520px);
+background: linear-gradient(180deg, rgba(18, 39, 63, 0.92), rgba(11, 25, 40, 0.97));
+border: 1px solid rgba(148, 163, 184, 0.22);
+border-radius: 24px;
+padding: 1rem 1rem 1.2rem;
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 30px 60px rgba(15, 23, 42, 0.2);
+}
+
+.map-header {
+display: inline-flex;
+align-items: center;
+gap: 0.6rem;
+margin-bottom: 0.8rem;
+color: #e2e8f0;
+font-size: 0.8rem;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+font-weight: 700;
+}
+
+.pulse-dot {
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background: #67e8f9;
+box-shadow: 0 0 0 0 rgba(103, 232, 249, 0.7);
+animation: pulse 2s infinite;
+}
+
+.world-map {
+width: 100%;
+height: auto;
+display: block;
+border-radius: 18px;
+background: radial-gradient(circle at center, rgba(59,130,246,0.12), rgba(15,23,42,0.08) 55%, rgba(15,23,42,0));
+}
+
+.map-point {
+fill: #7dd3fc;
+stroke: rgba(255,255,255,0.7);
+stroke-width: 2;
+}
+
+.point-uae { filter: drop-shadow(0 0 12px rgba(125, 211, 252, 0.8)); }
+.point-europe { opacity: 0.92; }
+.point-far-east { opacity: 0.95; }
+.point-asia { opacity: 0.9; }
+.point-africa { opacity: 0.88; }
+
+.map-footer {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 0.8rem;
+margin-top: 0.8rem;
+}
+
+.map-footer div {
+display: flex;
+flex-direction: column;
+gap: 0.15rem;
+padding: 0.8rem 0.9rem;
+background: rgba(15, 23, 42, 0.4);
+border: 1px solid rgba(148, 163, 184, 0.14);
+border-radius: 14px;
+}
+
+.map-footer strong {
+color: #f8fbff;
+font-size: 1.45rem;
+}
+
+.map-footer span {
+color: #bfd0ea;
+font-size: 0.75rem;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+
+@keyframes pulse {
+0% { box-shadow: 0 0 0 0 rgba(103, 232, 249, 0.7); }
+70% { box-shadow: 0 0 0 14px rgba(103, 232, 249, 0); }
+100% { box-shadow: 0 0 0 0 rgba(103, 232, 249, 0); }
+}
+
 @keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0); /* Start and end at the original position */
-  }
-  50% {
-    transform: translateY(
-      -30px
-    ); /* Move up by 20px at the peak of the bounce */
-  }
+0%,
+100% {
+  transform: translateY(0);
 }
-
-@media (max-width: 1050px) {
-  .banner {
-    display: flex;
-    margin: 20px 20px;
-    height: 60vh;
-    width: 100vw;
-  }
+50% {
+  transform: translateY(-12px);
+}
 }
 
 @media (max-width: 900px) {
-  .banner {
-    display: flex;
-    margin: 10px 10px;
-    height: 30vh;
-    width: 100vw;
-  }
+.banner {
+  grid-template-columns: 1fr;
+  min-height: auto;
+  padding: 1.8rem 1rem 2rem;
+}
+
+.left {
+  padding: 0.5rem 0.25rem;
+}
+
+.button {
+  gap: 0.75rem;
+}
 }
 
 @media (max-width: 500px) {
-  .banner {
-    display: flex;
-    margin: 10px 10px;
-    height: 19vh;
-    width: 100vw;
-  }
-  .left h1 {
-    font-size: 4vw;
-    align-items: center;
-    color: black;
-    font-weight: 400;
-    animation: fadeIn 3s;
-  }
-
-  .left p {
-    padding: 2px;
-    font-size: 2.8vw;
-    color: black;
-    font-weight: 300;
-    animation: fadeIn 3s;
-  }
-
-  .button .btn .btndownload {
-    /* border: none;
-    background-color: #f8f8f8;
-    color: black;
-    padding: 2.5vw 2.5vw;
-    font-size: 2.6vw;
-    font-weight: 400;
-    border-radius: 50px; */
-    border: none;
-  background-color: #f8f8f8;
-  color: black;
-  padding: 12px 20px;
-  font-size: 1rem;
-  font-weight: 400;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+.banner {
+  margin: 16px 12px 0;
+  border-radius: 20px;
 }
 
-
-/* Optional: Hover effect */
-.button  .btn:hover  {
-  background-color: #e0e0e0;
+.left h1 {
+  font-size: 2.1rem;
 }
 
-/* Small tweaks for mobile screens */
-@media (max-width: 500px) {
-  .button .btn {
-   display: none;
-  }
- }
+.left p {
+  font-size: 0.95rem;
+}
+
+.button .btn {
+  width: 100%;
+  justify-content: center;
+}
+
+.map-footer {
+  grid-template-columns: 1fr;
+}
 }
