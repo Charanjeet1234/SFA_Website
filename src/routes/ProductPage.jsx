@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
@@ -10,6 +10,10 @@ function ProductPage() {
   const { slug } = useParams();
   const product = seoProductsMap[slug] || null;
   const [openFaq, setOpenFaq] = useState(0);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [slug]);
 
   useSeoMeta(
     product

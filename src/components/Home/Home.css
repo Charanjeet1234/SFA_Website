@@ -175,8 +175,70 @@
  fill: #7dd3fc;
  stroke: rgba(255, 255, 255, 0.75);
  stroke-width: 2;
- animation: pulseDot 2.6s ease-in-out infinite;
+ animation: none;
  transform-origin: center;
+}
+
+.map-routes {
+ opacity: 0.9;
+}
+
+.shipping-route {
+ fill: none;
+ stroke: url(#routeGlow);
+ stroke-width: 1.8;
+ stroke-linecap: round;
+ stroke-dasharray: 7 11;
+ animation: routeFlow 4.5s linear infinite;
+}
+
+@keyframes routeFlow {
+ from {
+   stroke-dashoffset: 0;
+   opacity: 0.45;
+ }
+ 50% {
+   opacity: 1;
+ }
+ to {
+   stroke-dashoffset: -180;
+   opacity: 0.7;
+ }
+}
+
+.origin-point text {
+ fill: rgba(224, 242, 254, 0.95);
+ font-size: 12px;
+ font-weight: 600;
+ letter-spacing: 0.04em;
+ text-transform: uppercase;
+ paint-order: stroke;
+ stroke: rgba(15, 23, 42, 0.8);
+ stroke-width: 4px;
+ stroke-linejoin: round;
+}
+
+.shipping-ships {
+ filter: drop-shadow(0 8px 10px rgba(34, 211, 238, 0.22));
+}
+
+.ship {
+ transform-box: fill-box;
+ transform-origin: center;
+}
+
+.ship-body {
+ fill: rgba(224, 247, 255, 0.96);
+ stroke: rgba(148, 163, 184, 0.7);
+ stroke-width: 1;
+}
+
+.ship-cabin {
+ fill: rgba(125, 211, 252, 0.9);
+}
+
+.ship-window {
+ fill: rgba(15, 23, 42, 0.75);
 }
 
 @keyframes pulseDot {

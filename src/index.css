@@ -1,11 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 @import "tailwindcss";
+
+:root {
+  --bg: #f3f7fb;
+  --surface: #ffffff;
+  --surface-strong: #edf6ff;
+  --primary: #0f6dcb;
+  --primary-soft: rgba(15, 109, 203, 0.12);
+  --text: #122335;
+  --muted: #4b5b73;
+  --muted-strong: #23364d;
+  --line: rgba(148, 163, 184, 0.22);
+  --shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+}
+
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Outfit", "Segoe UI", sans-serif;
-  scroll-behavior: smooth;
 }
 
 html {
@@ -14,26 +27,43 @@ html {
 
 body {
   min-height: 100vh;
-  background-color: #f3f7fb;
-  color: #122335;
+  background: radial-gradient(circle at top, #f8fbff 0%, var(--bg) 50%, #eef3f9 100%);
+  color: var(--text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 img {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
+  text-underline-offset: 0;
+}
+
+* {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
 }
 
 .app {
-  width: 80%;
-  margin: auto;
+  width: min(1200px, calc(100% - 32px));
+  margin: 0 auto;
 }
 
 @keyframes fadeIn {

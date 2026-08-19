@@ -1,37 +1,66 @@
 
 
 .banner {
+position: relative;
 display: grid;
-grid-template-columns: 1.15fr 0.85fr;
+grid-template-columns: 1.12fr 0.88fr;
 align-items: center;
 gap: 2rem;
 margin: 28px 20px 0;
-padding: 2.5rem 2rem;
+padding: 2.6rem 2rem;
 min-height: 560px;
-background: linear-gradient(135deg, rgba(14, 30, 63, 0.96), rgba(22, 51, 90, 0.92));
-border-radius: 28px;
+background:
+   radial-gradient(circle at top left, rgba(115, 173, 255, 0.18), transparent 28%),
+   linear-gradient(135deg, rgba(11, 24, 41, 0.98), rgba(17, 41, 72, 0.94));
+border: 1px solid rgba(148, 163, 184, 0.16);
+border-radius: 30px;
 box-shadow: 0 30px 70px rgba(15, 23, 42, 0.18);
 overflow: hidden;
 }
 
+.banner::before,
+.banner::after {
+content: "";
+position: absolute;
+border-radius: 50%;
+pointer-events: none;
+}
+
+.banner::before {
+width: 420px;
+height: 420px;
+right: -120px;
+top: -120px;
+background: radial-gradient(circle, rgba(96, 165, 250, 0.22), transparent 62%);
+}
+
+.banner::after {
+width: 300px;
+height: 300px;
+left: -80px;
+bottom: -100px;
+background: radial-gradient(circle, rgba(34, 211, 238, 0.14), transparent 66%);
+}
+
 .left {
-display: flex;
-gap: 1rem;
-flex-direction: column;
-justify-content: center;
-padding: 1.25rem 0.5rem 1.25rem 0.75rem;
 position: relative;
 z-index: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 1rem;
+padding: 1.2rem 0.5rem 1.2rem 0.6rem;
 }
 
 .eyebrow {
 display: inline-flex;
 align-self: flex-start;
-padding: 0.45rem 0.85rem;
+padding: 0.5rem 0.85rem;
 border-radius: 999px;
-background: rgba(96, 165, 250, 0.15);
+background: rgba(96, 165, 250, 0.14);
+border: 1px solid rgba(147, 197, 253, 0.24);
 color: #cfe3ff;
-font-size: 0.75rem;
+font-size: 0.72rem;
 letter-spacing: 0.12em;
 text-transform: uppercase;
 font-weight: 700;
@@ -39,29 +68,62 @@ font-weight: 700;
 
 .left h1 {
 margin: 0;
-font-size: clamp(2.3rem, 4vw, 4.3rem);
-line-height: 1.08;
+max-width: 680px;
+font-size: clamp(2.5rem, 4.2vw, 4.55rem);
+line-height: 1.04;
 color: #f8fbff;
 font-weight: 700;
-letter-spacing: -0.04em;
+letter-spacing: -0.05em;
 animation: fadeIn 3s;
 }
 
 .left p {
 margin: 0;
-max-width: 680px;
-font-size: clamp(1rem, 1.6vw, 1.45rem);
-line-height: 1.7;
+max-width: 700px;
+font-size: clamp(1rem, 1.5vw, 1.38rem);
+line-height: 1.72;
 color: rgba(225, 233, 245, 0.9);
 font-weight: 400;
 animation: fadeIn 3s;
 }
 
-.button {
+.banner-metrics {
 display: flex;
 flex-wrap: wrap;
 gap: 0.9rem;
-margin-top: 0.5rem;
+margin-top: 0.25rem;
+animation: fadeIn 3s;
+}
+
+.banner-metrics div {
+min-width: 130px;
+padding: 0.8rem 0.95rem;
+border-radius: 16px;
+background: rgba(15, 23, 42, 0.34);
+border: 1px solid rgba(148, 163, 184, 0.15);
+display: flex;
+flex-direction: column;
+gap: 0.2rem;
+}
+
+.banner-metrics strong {
+color: #f8fbff;
+font-size: 1.25rem;
+letter-spacing: -0.03em;
+}
+
+.banner-metrics span {
+color: #dfeaf6;
+font-size: 0.72rem;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+}
+
+.button {
+display: flex;
+flex-wrap: wrap;
+gap: 0.85rem;
+margin-top: 0.2rem;
 animation: fadeIn 3s;
 }
 
@@ -76,21 +138,23 @@ transition: all 0.25s ease;
 
 .button .btn:hover {
 transform: translateY(-1px);
-box-shadow: 0 10px 24px rgba(15, 23, 42, 0.18);
+box-shadow: 0 12px 24px rgba(15, 23, 42, 0.15);
 }
 
 .button .btn-light {
 background: #ffffff;
-color: #143a68;
+color: #153b66;
 }
 
 .button #btndownload {
-background: rgba(255, 255, 255, 0.08);
+background: rgba(255, 255, 255, 0.06);
 color: #ffffff;
 border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .banner-visual {
+position: relative;
+z-index: 1;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -99,8 +163,8 @@ min-height: 420px;
 
 .map-card {
 position: relative;
-width: min(100%, 520px);
-background: linear-gradient(180deg, rgba(18, 39, 63, 0.92), rgba(11, 25, 40, 0.97));
+width: min(100%, 540px);
+background: linear-gradient(180deg, rgba(12, 25, 42, 0.9), rgba(15, 28, 45, 0.96));
 border: 1px solid rgba(148, 163, 184, 0.22);
 border-radius: 24px;
 padding: 1rem 1rem 1.2rem;
@@ -113,7 +177,7 @@ align-items: center;
 gap: 0.6rem;
 margin-bottom: 0.8rem;
 color: #e2e8f0;
-font-size: 0.8rem;
+font-size: 0.76rem;
 letter-spacing: 0.12em;
 text-transform: uppercase;
 font-weight: 700;
@@ -133,12 +197,12 @@ width: 100%;
 height: auto;
 display: block;
 border-radius: 18px;
-background: radial-gradient(circle at center, rgba(59,130,246,0.12), rgba(15,23,42,0.08) 55%, rgba(15,23,42,0));
+background: radial-gradient(circle at center, rgba(59, 130, 246, 0.08), rgba(15, 23, 42, 0.08) 55%, rgba(15, 23, 42, 0));
 }
 
 .map-point {
 fill: #7dd3fc;
-stroke: rgba(255,255,255,0.7);
+stroke: rgba(255, 255, 255, 0.7);
 stroke-width: 2;
 }
 
@@ -148,11 +212,19 @@ stroke-width: 2;
 .point-asia { opacity: 0.9; }
 .point-africa { opacity: 0.88; }
 
+.map-card text {
+fill: rgba(226, 232, 240, 0.9);
+font-size: 11px;
+font-weight: 600;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+
 .map-footer {
 display: grid;
 grid-template-columns: repeat(2, minmax(0, 1fr));
 gap: 0.8rem;
-margin-top: 0.8rem;
+margin-top: 0.9rem;
 }
 
 .map-footer div {
@@ -160,7 +232,7 @@ display: flex;
 flex-direction: column;
 gap: 0.15rem;
 padding: 0.8rem 0.9rem;
-background: rgba(15, 23, 42, 0.4);
+background: rgba(15, 23, 42, 0.38);
 border: 1px solid rgba(148, 163, 184, 0.14);
 border-radius: 14px;
 }
@@ -168,11 +240,12 @@ border-radius: 14px;
 .map-footer strong {
 color: #f8fbff;
 font-size: 1.45rem;
+letter-spacing: -0.04em;
 }
 
 .map-footer span {
 color: #bfd0ea;
-font-size: 0.75rem;
+font-size: 0.72rem;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 }
@@ -183,52 +256,46 @@ text-transform: uppercase;
 100% { box-shadow: 0 0 0 0 rgba(103, 232, 249, 0); }
 }
 
-@keyframes bounce {
-0%,
-100% {
-  transform: translateY(0);
-}
-50% {
-  transform: translateY(-12px);
-}
-}
-
 @media (max-width: 900px) {
 .banner {
-  grid-template-columns: 1fr;
-  min-height: auto;
-  padding: 1.8rem 1rem 2rem;
+   grid-template-columns: 1fr;
+   min-height: auto;
+   padding: 1.8rem 1rem 2rem;
 }
 
 .left {
-  padding: 0.5rem 0.25rem;
+   padding: 0.5rem 0.25rem;
 }
 
 .button {
-  gap: 0.75rem;
+   gap: 0.75rem;
 }
 }
 
 @media (max-width: 500px) {
 .banner {
-  margin: 16px 12px 0;
-  border-radius: 20px;
+   margin: 16px 12px 0;
+   border-radius: 22px;
 }
 
 .left h1 {
-  font-size: 2.1rem;
+   font-size: 2.2rem;
 }
 
 .left p {
-  font-size: 0.95rem;
+   font-size: 0.97rem;
+}
+
+.banner-metrics {
+   grid-template-columns: 1fr;
 }
 
 .button .btn {
-  width: 100%;
-  justify-content: center;
+   width: 100%;
+   justify-content: center;
 }
 
 .map-footer {
-  grid-template-columns: 1fr;
+   grid-template-columns: 1fr;
 }
 }

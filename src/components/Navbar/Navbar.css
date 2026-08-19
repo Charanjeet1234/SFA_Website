@@ -1,215 +1,103 @@
-/* /* .Navbar {
-  padding: 20px 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.Navbar .logo {
-  width: 100px;
-}
-
-.Navbar-menu {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  color: #49557e;
-  font-size: 18px;
-}
-
-.Navbar-right {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.Navbar li {
-  cursor: pointer;
-}
-
-.Navbar ul li a {
-  text-decoration: none;
-  color: #49557e;
-}
-
-@media (max-width: 1050px) {
-  .Navbar .logo {
-    width: 80px;
-  }
-  .Navbar-menu {
-    gap: 20px;
-    font-size: 17px;
-  }
-}
-
-@media (max-width: 900px) {
-  .Navbar .logo {
-    width: 60px;
-  }
-  .navbar-menu {
-    gap: 15px;
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 500px) {
-  .Navbar .logo {
-    width: 40px;
-  }
-  .Navbar {
-    padding: 20px 35px;
-  }
-  .Navbar-menu {
-    gap: 8px;
-    font-size: 11px;
-    padding: 0px 10px;
-  }
-}
-
-@media (max-width: 400px) {
-  .Navbar .logo {
-    width: 40px;
-  }
-  .Navbar {
-    padding: 20px 25px;
-  }
-  .Navbar-menu {
-    gap: 8px;
-    font-size: 11px;
-    padding: 0px 5px;
-  }
-} 
-
-
-.nav-item {
-  text-align: center;
-} */
-
-/* ========================================
-   SFA GLOBEX NAVBAR
-======================================== */
-
 .custom-navbar {
-  width: 100%;
-  background: #ffffff;
-  padding: 15px 60px;
-  border-bottom: none;
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 1000;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.04);
 }
 
 .navbar-container {
-  width: 100%;
-  min-height: 55px;
+  width: min(1200px, calc(100% - 32px));
+  min-height: 76px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
 }
 
-
-/* ========================================
-   LOGO
-======================================== */
-
 .navbar-brand {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  text-decoration: none;
+  margin-left: 0.2rem;
+  margin-top: 0.3rem;
+  padding-top: 0.15rem;
+  padding-bottom: 0.15rem;
 }
 
 .logo {
-  width: 120px;
+  width: 122px;
   height: auto;
   display: block;
 }
 
-
-/* ========================================
-   DESKTOP MENU
-======================================== */
-
 .navbar-menu {
   display: flex;
   align-items: center;
-  gap: 30px;
+  justify-content: flex-end;
+  gap: 1.8rem;
   margin-left: auto;
 }
 
 .navbar-menu a {
+  position: relative;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: #4f6077;
+  letter-spacing: -0.01em;
   text-decoration: none;
-
-  /* Secondary text color */
-  color: #5f5f5f;
-
-  font-size: 17px;
-  font-weight: 500;
-
-  transition: color 0.25s ease;
+  transition: color 0.2s ease;
 }
 
-/* Home / first menu item */
+.navbar-menu a,
+.navbar-menu a:hover,
+.navbar-menu a:focus,
+.navbar-menu a:visited,
+.navbar-menu a:active {
+  text-decoration: none;
+  border-bottom: none;
+  outline: none;
+}
+
 .navbar-menu a:first-child {
-  color: #0084c7;
+  color: var(--primary);
 }
 
-.navbar-menu a:hover {
-  color: #0084c7;
+.navbar-menu a:hover,
+.navbar-menu a:focus-visible {
+  color: var(--primary);
 }
-
-
-/* ========================================
-   HAMBURGER BUTTON
-======================================== */
 
 .navbar-toggler {
   display: none;
-
-  width: 60px;
-  height: 60px;
-
-  padding: 10px;
-
-  border: none;
-  background: transparent;
-
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(15, 109, 203, 0.18);
+  border-radius: 12px;
+  background: rgba(15, 109, 203, 0.04);
   cursor: pointer;
-
+  padding: 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  gap: 7px;
-
+  gap: 6px;
   margin-left: auto;
 }
 
-
-/* Hamburger Lines */
-
 .navbar-toggler span {
   display: block;
-
-  width: 38px;
-  height: 4px;
-
-  background: #0084c7;
-
-  border-radius: 3px;
-
-  transition: all 0.3s ease;
-}
-
-
-/* ========================================
-   HAMBURGER → X ANIMATION
-======================================== */
-
-.navbar-toggler.menu-open {
-  gap: 0;
+  width: 22px;
+  height: 2.5px;
+  background: var(--primary);
+  border-radius: 999px;
+  transition: all 0.25s ease;
 }
 
 .navbar-toggler.menu-open span:nth-child(1) {
-  transform: rotate(45deg) translate(3px, 3px);
+  transform: rotate(45deg) translate(4px, 4px);
 }
 
 .navbar-toggler.menu-open span:nth-child(2) {
@@ -217,164 +105,55 @@
 }
 
 .navbar-toggler.menu-open span:nth-child(3) {
-  transform: rotate(-45deg) translate(3px, -3px);
+  transform: rotate(-45deg) translate(4px, -4px);
 }
-
-
-/* ========================================
-   TABLET / MOBILE
-======================================== */
 
 @media (max-width: 991px) {
-
-  .custom-navbar {
-    padding: 15px 30px;
-  }
-
   .navbar-container {
-    min-height: 55px;
+   min-height: 68px;
   }
-
-  /* Show hamburger */
 
   .navbar-toggler {
-    display: flex;
+   display: flex;
   }
-
-
-  /* Mobile menu */
 
   .navbar-menu {
-    display: none;
-
-    width: 100%;
-
-    flex-direction: column;
-    align-items: center;
-
-    gap: 0;
-
-    padding: 15px 0;
-
-    margin: 0;
-
-    background: #ffffff;
-
-    border-top: 1px solid #eeeeee;
-
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+   display: none;
+   width: 100%;
+   flex-direction: column;
+   align-items: stretch;
+   gap: 0;
+   margin: 0;
+   padding: 0.5rem 0 0.75rem;
+   border-top: 1px solid rgba(148, 163, 184, 0.18);
+   background: rgba(255, 255, 255, 0.96);
   }
-
-
-  /* Menu opens and pushes banner down */
 
   .navbar-menu.show {
-    display: flex;
+   display: flex;
   }
-
-
-  /* Mobile links */
 
   .navbar-menu a {
-    width: 100%;
-
-    padding: 15px 20px;
-
-    text-align: center;
-
-    font-size: 18px;
-
-    color: #5f5f5f;
+   width: 100%;
+   padding: 0.9rem 1rem;
+   text-align: center;
+   font-size: 0.98rem;
+   border-radius: 10px;
   }
 
-
-  /* First item */
-
-  .navbar-menu a:first-child {
-    color: #0084c7;
-  }
-
-
-  .navbar-menu a:hover {
-    background: #f2f9fc;
-    color: #0084c7;
+  .navbar-menu a:hover,
+  .navbar-menu a:focus-visible {
+   background: rgba(15, 109, 203, 0.04);
   }
 }
 
-
-/* ========================================
-   SMALL MOBILE
-======================================== */
-
-@media (max-width: 500px) {
-
-  .custom-navbar {
-    padding: 12px 20px;
-  }
-
+@media (max-width: 520px) {
   .navbar-container {
-    min-height: 55px;
+   width: min(100%, calc(100% - 20px));
+   min-height: 64px;
   }
 
   .logo {
-    width: 90px;
-  }
-
-
-  /* Larger hamburger */
-
-  .navbar-toggler {
-    width: 65px;
-    height: 65px;
-
-    gap: 8px;
-  }
-
-  .navbar-toggler span {
-    width: 42px;
-    height: 4px;
-
-    background: #0084c7;
-  }
-
-
-  .navbar-menu {
-    padding: 10px 0;
-  }
-
-  .navbar-menu a {
-    font-size: 17px;
-    padding: 14px 20px;
-  }
-}
-
-
-/* ========================================
-   EXTRA SMALL MOBILE
-======================================== */
-
-@media (max-width: 400px) {
-
-  .custom-navbar {
-    padding: 10px 15px;
-  }
-
-  .logo {
-    width: 85px;
-  }
-
-  .navbar-toggler {
-    width: 65px;
-    height: 65px;
-  }
-
-  .navbar-toggler span {
-    width: 40px;
-    height: 4px;
-  }
-
-  .navbar-menu a {
-    font-size: 16px;
-    padding: 13px 20px;
+   width: 96px;
   }
 }

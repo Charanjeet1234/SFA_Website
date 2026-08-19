@@ -60,6 +60,14 @@ function Home() {
         <div className="global-map-panel">
           <div className="map-chip">Trusted Global Supply</div>
           <svg className="mini-map" viewBox="0 0 600 320" role="img" aria-label="Global market coverage map">
+            <defs>
+              <linearGradient id="routeGlow" x1="0%" x2="100%" y1="0%" y2="0%">
+                <stop offset="0%" stopColor="rgba(125,211,252,0.2)" />
+                <stop offset="50%" stopColor="rgba(96,165,250,0.85)" />
+                <stop offset="100%" stopColor="rgba(34,211,238,0.2)" />
+              </linearGradient>
+            </defs>
+
             <g fill="rgba(125,211,252,0.22)" stroke="rgba(125,211,252,0.7)" strokeWidth="2">
               <path d="M74 151l48-23 47-17 25 11 20 17 9 19-12 18-30 12-30 4-26-8-26-18-17-17z" />
               <path d="M258 92l26-13 39 2 20 17 12 17-8 19-25 10-29 1-17-12-10-19z" />
@@ -67,12 +75,85 @@ function Home() {
               <path d="M472 157l31-8 41 10 26 24-16 22-39 5-31-19-18-21z" />
               <path d="M516 94l20-9 34 5 15 20-12 17-28 6-23-11-18-14z" />
             </g>
-            <g>
-              <circle cx="392" cy="147" r="9" className="mini-dot dot-uae" />
-              <circle cx="170" cy="178" r="8" className="mini-dot dot-europe" />
-              <circle cx="495" cy="180" r="8" className="mini-dot dot-asia" />
-              <circle cx="290" cy="230" r="8" className="mini-dot dot-africa" />
-              <circle cx="565" cy="129" r="8" className="mini-dot dot-east" />
+
+            <g className="map-routes">
+              <path className="shipping-route route-europe" d="M392 147 C 340 136, 274 144, 170 178" />
+              <path className="shipping-route route-africa" d="M392 147 C 358 170, 327 200, 290 230" />
+              <path className="shipping-route route-india" d="M392 147 C 416 157, 459 168, 495 180" />
+              <path className="shipping-route route-turkey" d="M392 147 C 430 126, 495 112, 565 129" />
+            </g>
+
+            <g className="shipping-ships">
+              <g className="ship ship-europe">
+                <path className="ship-body" d="M0 0 L16 0 L20 4 L18 10 L16 12 L0 12 L-2 8 L-2 4 Z" />
+                <path className="ship-cabin" d="M5 0 L10 -4 L14 -4 L14 0 Z" />
+                <circle className="ship-window" cx="9" cy="12" r="2.5" />
+                <animateMotion
+                  path="M392 147 C 340 136, 274 144, 170 178"
+                  dur="11s"
+                  repeatCount="indefinite"
+                  rotate="auto"
+                />
+              </g>
+
+              <g className="ship ship-africa">
+                <path className="ship-body" d="M0 0 L16 0 L20 4 L18 10 L16 12 L0 12 L-2 8 L-2 4 Z" />
+                <path className="ship-cabin" d="M5 0 L10 -4 L14 -4 L14 0 Z" />
+                <circle className="ship-window" cx="9" cy="12" r="2.5" />
+                <animateMotion
+                  path="M392 147 C 358 170, 327 200, 290 230"
+                  dur="12s"
+                  repeatCount="indefinite"
+                  rotate="auto"
+                />
+              </g>
+
+              <g className="ship ship-india">
+                <path className="ship-body" d="M0 0 L16 0 L20 4 L18 10 L16 12 L0 12 L-2 8 L-2 4 Z" />
+                <path className="ship-cabin" d="M5 0 L10 -4 L14 -4 L14 0 Z" />
+                <circle className="ship-window" cx="9" cy="12" r="2.5" />
+                <animateMotion
+                  path="M392 147 C 416 157, 459 168, 495 180"
+                  dur="10s"
+                  repeatCount="indefinite"
+                  rotate="auto"
+                />
+              </g>
+
+              <g className="ship ship-turkey">
+                <path className="ship-body" d="M0 0 L16 0 L20 4 L18 10 L16 12 L0 12 L-2 8 L-2 4 Z" />
+                <path className="ship-cabin" d="M5 0 L10 -4 L14 -4 L14 0 Z" />
+                <circle className="ship-window" cx="9" cy="12" r="2.5" />
+                <animateMotion
+                  path="M392 147 C 430 126, 495 112, 565 129"
+                  dur="13s"
+                  repeatCount="indefinite"
+                  rotate="auto"
+                />
+              </g>
+            </g>
+
+            <g className="origin-points">
+              <g className="origin-point origin-uae">
+                <circle cx="392" cy="147" r="9" className="mini-dot dot-uae" />
+                <text x="392" y="132" textAnchor="middle">Dubai, UAE</text>
+              </g>
+              <g className="origin-point origin-europe">
+                <circle cx="170" cy="178" r="8" className="mini-dot dot-europe" />
+                <text x="170" y="202" textAnchor="middle">Europe</text>
+              </g>
+              <g className="origin-point origin-india">
+                <circle cx="495" cy="180" r="8" className="mini-dot dot-asia" />
+                <text x="495" y="204" textAnchor="middle">India</text>
+              </g>
+              <g className="origin-point origin-africa">
+                <circle cx="290" cy="230" r="8" className="mini-dot dot-africa" />
+                <text x="290" y="255" textAnchor="middle">Africa</text>
+              </g>
+              <g className="origin-point origin-turkey">
+                <circle cx="565" cy="129" r="8" className="mini-dot dot-east" />
+                <text x="565" y="113" textAnchor="middle">Turkey</text>
+              </g>
             </g>
           </svg>
         </div>

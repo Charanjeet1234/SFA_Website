@@ -22,13 +22,29 @@ const Banner = ({pdfFileName}) => {
          ferro silicon, manganese ore, and ferro molybdenum for steel plants and
          industrial buyers worldwide.
        </p>
+
+       <div className="banner-metrics" aria-label="Company metrics">
+         <div>
+           <strong>40+</strong>
+           <span>Countries served</span>
+         </div>
+         <div>
+           <strong>100k+</strong>
+           <span>Tonnes delivered</span>
+         </div>
+         <div>
+           <strong>24/7</strong>
+           <span>Commercial support</span>
+         </div>
+       </div>
+
        <div className="button">
          <a href="mailto:sfa.globex@gmail.com">
-           <button type="button" className="btn btn-light ">Inquiry</button>
+           <button type="button" className="btn btn-light ">Request Quote</button>
          </a>
          <a href="#products">
            <button type="button" className="btn btn-light">
-             Explore Our Products
+             Explore Products
            </button>
          </a>
          <button
@@ -37,7 +53,7 @@ const Banner = ({pdfFileName}) => {
            type="button"
            className="btn btn-light "
          >
-           Download Product Specification
+           Download Spec
          </button>
        </div>
      </div>
@@ -75,6 +91,11 @@ const Banner = ({pdfFileName}) => {
              <circle cx="505" cy="183" r="7" className="map-point point-far-east" />
              <circle cx="610" cy="132" r="7" className="map-point point-asia" />
              <circle cx="290" cy="228" r="7" className="map-point point-africa" />
+             <text x="385" y="133">UAE</text>
+             <text x="178" y="212">Europe</text>
+             <text x="505" y="207">India</text>
+             <text x="610" y="116">Turkey</text>
+             <text x="290" y="250">Africa</text>
            </g>
          </svg>
 
