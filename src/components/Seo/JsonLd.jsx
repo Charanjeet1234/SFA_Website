@@ -30,7 +30,6 @@ export const localBusinessSchema = {
     "Europe",
     "Africa",
     "India",
-    "Far East",
     "Turkey"
   ],
   openingHours: ["Mo-Sa 10:00-18:00"],

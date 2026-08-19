@@ -48,7 +48,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.5vw;
-  height: 30vh;
+  height: auto;
 }
 
 .title h2 {
@@ -58,10 +58,163 @@
   padding: 20px 20px;
 }
 
+.market-coverage {
+  width: min(1100px, calc(100% - 32px));
+  margin: 32px auto 0;
+  padding: 24px 20px 30px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(8, 53, 92, 0.98), rgba(14, 104, 168, 0.82));
+  box-shadow: 0 22px 44px rgba(5, 41, 75, 0.18);
+}
+
+.market-header {
+  text-align: center;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+.market-header h3 {
+  margin: 0;
+  font-size: clamp(1.3rem, 2vw, 2rem);
+  font-weight: 600;
+}
+
+.route-map {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.route-line {
+  position: absolute;
+  left: 10%;
+  right: 8%;
+  top: 44%;
+  height: 120px;
+  border: 2px solid rgba(146, 205, 255, 0.65);
+  border-color: rgba(146, 205, 255, 0.65) transparent transparent transparent;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  transform: rotate(-8deg);
+}
+
+.route-node {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 86px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #eaf6ff;
+  font-size: 0.78rem;
+  font-weight: 600;
+  backdrop-filter: blur(8px);
+}
+
+.route-node--dubai { left: 8%; top: 56%; }
+.route-node--europe { left: 30%; top: 24%; }
+.route-node--africa { left: 42%; top: 61%; }
+.route-node--india { left: 65%; top: 56%; }
+.route-node--turkey { left: 73%; top: 34%; }
+
+.ship {
+  position: absolute;
+  left: 12%;
+  top: 48%;
+  width: 120px;
+  height: 50px;
+  animation: shipRoute 12s ease-in-out infinite alternate;
+}
+
+.ship-hull {
+  position: absolute;
+  left: 8px;
+  bottom: 10px;
+  width: 90px;
+  height: 18px;
+  background: linear-gradient(90deg, #dfeaf8, #b9d5ef 40%, #f4f9ff 100%);
+  border-radius: 12px 18px 14px 16px;
+  box-shadow: inset 0 -3px 0 rgba(58, 106, 159, 0.2);
+}
+
+.ship::before {
+  content: "";
+  position: absolute;
+  left: 34px;
+  bottom: 20px;
+  width: 26px;
+  height: 14px;
+  background: #f8fafc;
+  clip-path: polygon(0 100%, 100% 100%, 70% 0, 30% 0);
+}
+
+.ship::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  bottom: 4px;
+  width: 94px;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.38);
+}
+
+.container {
+  position: absolute;
+  bottom: 24px;
+  width: 18px;
+  height: 14px;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #f7ba47, #dc8a16);
+  border: 1px solid rgba(140, 88, 10, 0.3);
+  animation: containerSway 1.8s ease-in-out infinite alternate;
+}
+
+.c1 { left: 18px; }
+.c2 { left: 40px; animation-delay: 0.3s; }
+.c3 { left: 62px; animation-delay: 0.6s; }
+
 .Button {
   float: right;
   padding: 20px;
   position: sticky;
+}
+
+@keyframes shipRoute {
+  0% {
+    transform: translate(0, 0) rotate(-4deg);
+  }
+  25% {
+    transform: translate(120px, -26px) rotate(-2deg);
+  }
+  50% {
+    transform: translate(260px, 12px) rotate(1deg);
+  }
+  75% {
+    transform: translate(370px, -16px) rotate(3deg);
+  }
+  100% {
+    transform: translate(510px, 20px) rotate(5deg);
+  }
+}
+
+@keyframes containerSway {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-4px); }
 }
 
 @media (max-width: 1050px) {

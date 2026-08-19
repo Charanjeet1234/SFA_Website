@@ -44,9 +44,33 @@ function Home() {
           resistance. As a trusted ferro alloys supplier in Dubai, UAE, SFA
           Globex DMCC delivers high-quality ferro manganese, silico manganese,
           ferro chrome, ferro silicon, manganese ore, and ferro molybdenum to
-          steel producers across the Middle East, Europe, Africa, India, and the
-          Far East.
+          steel producers across the Middle East, Europe, Africa, India, and
+          Turkey.
         </h2>
+      </div>
+
+      <div className="market-coverage" aria-label="Global market coverage">
+        <div className="market-header">
+          <span className="eyebrow">Global Reach</span>
+          <h3>Supplied across five strategic markets</h3>
+        </div>
+
+        <div className="route-map">
+          <div className="route-line"></div>
+
+          <span className="route-node route-node--dubai">Dubai</span>
+          <span className="route-node route-node--europe">Europe</span>
+          <span className="route-node route-node--africa">Africa</span>
+          <span className="route-node route-node--india">India</span>
+          <span className="route-node route-node--turkey">Turkey</span>
+
+          <div className="ship" aria-label="Shipping route animation">
+            <span className="ship-hull"></span>
+            <span className="container c1"></span>
+            <span className="container c2"></span>
+            <span className="container c3"></span>
+          </div>
+        </div>
       </div>
       <div
         className="Button"

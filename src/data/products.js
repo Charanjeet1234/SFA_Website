@@ -5,7 +5,7 @@ export const seoProducts = [
     shortDescription:
       "High-grade ferro manganese supplier in Dubai, UAE for steelmaking, deoxidation, and alloy enhancement in carbon and stainless steel production.",
     description:
-      "Ferro manganese is a vital alloy used in steelmaking to increase strength, hardness, and wear resistance. SFA Globex DMCC supplies high-quality ferro manganese to steel plants, foundries, and industrial customers across the Middle East, Europe, Africa, India, and the Far East.",
+      "Ferro manganese is a vital alloy used in steelmaking to increase strength, hardness, and wear resistance. SFA Globex DMCC supplies high-quality ferro manganese to steel plants, foundries, and industrial customers across the Middle East, Europe, Africa, India, and Turkey.",
     keywords:
       "ferro manganese supplier UAE, high carbon ferro manganese Dubai, ferro manganese for steelmaking, manganese alloy supplier",
     applications: [
@@ -23,7 +23,7 @@ export const seoProducts = [
       {
         question: "Do you supply ferro manganese in Dubai?",
         answer:
-          "Yes. SFA Globex DMCC supplies ferro manganese and other ferro alloys across the UAE and international markets, including the Middle East, Europe, Africa, India, and the Far East."
+          "Yes. SFA Globex DMCC supplies ferro manganese and other ferro alloys across the UAE and international markets, including the Middle East, Europe, Africa, India, and Turkey."
       },
       {
         question: "What grades of ferro manganese are available?",
@@ -84,7 +84,7 @@ export const seoProducts = [
       {
         question: "Do you supply ferro chrome to global buyers?",
         answer:
-          "Yes. SFA Globex DMCC supplies ferro chrome to customers across the Middle East, Europe, Africa, India, and the Far East."
+          "Yes. SFA Globex DMCC supplies ferro chrome to customers across the Middle East, Europe, Africa, India, and Turkey."
       }
     ]
   },
