@@ -84,7 +84,7 @@ const Banner = ({pdfFileName}) => {
              <span>Countries served</span>
            </div>
            <div>
-             <strong>6</strong>
+             <strong>5</strong>
              <span>Core regions</span>
            </div>
          </div>
