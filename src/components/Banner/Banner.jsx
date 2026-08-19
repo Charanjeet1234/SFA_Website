@@ -39,7 +39,7 @@ const Banner = ({pdfFileName}) => {
        </div>
 
        <div className="button">
-         <a href="mailto:sfa.globex@gmail.com">
+         <a href="mailto:marketing@sfaglobex.ae">
            <button type="button" className="btn btn-light ">Request Quote</button>
          </a>
          <a href="#products">

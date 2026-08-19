@@ -16,7 +16,7 @@ export const localBusinessSchema = {
   description:
     "SFA Globex DMCC is a Dubai-based trading company specializing in the supply of ferro alloys including ferro manganese, silico manganese, ferro chrome, ferro silicon, manganese ore, and ferro molybdenum.",
   telephone: "+971-524426170",
-  email: "sfa.globex@gmail.com",
+  email: "marketing@sfaglobex.ae",
   address: {
     "@type": "PostalAddress",
     streetAddress: "2005, Dubai Star / Preatoni Tower, Cluster L, JLT",

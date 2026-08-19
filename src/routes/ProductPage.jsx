@@ -105,7 +105,7 @@ function ProductPage() {
                 {product.description}
               </p>
               <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", marginTop: "1rem" }}>
-                <a href="mailto:sfa.globex@gmail.com" className="btn btn-primary">
+                <a href="mailto:marketing@sfaglobex.ae" className="btn btn-primary">
                   Request Quote
                 </a>
                 <a href="tel:+971524426170" className="btn btn-outline-primary">

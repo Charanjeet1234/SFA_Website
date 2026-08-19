@@ -41,7 +41,7 @@ function Footer() {
               <a href="tel:+97144580205">+971-44580205</a>
             </li>
             <li>
-              <a href="mailto:sfa.globex@gmail.com">sfa.globex@gmail.com</a>
+              <a href="mailto:marketing@sfaglobex.ae">marketing@sfaglobex.ae</a>
             </li>
             <li>
               <a href="mailto:marketing@sfaglobex.ae">marketing@sfaglobex.ae</a>
