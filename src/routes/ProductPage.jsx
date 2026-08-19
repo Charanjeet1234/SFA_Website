@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
@@ -9,6 +9,7 @@ import { seoProductsMap } from "../data/products";
 function ProductPage() {
   const { slug } = useParams();
   const product = seoProductsMap[slug] || null;
+  const [openFaq, setOpenFaq] = useState(0);
 
   useSeoMeta(
     product
@@ -93,7 +94,9 @@ function ProductPage() {
               <p style={{ color: "#7b8aa3", textTransform: "uppercase", letterSpacing: "0.08em", fontWeight: 700 }}>
                 Ferro Alloys Supplier in Dubai, UAE
               </p>
-              <h1 style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>{product.name}</h1>
+              <h1 style={{ fontSize: "2.5rem", marginBottom: "1rem", letterSpacing: "-0.04em" }}>
+                {product.name} Supplier in Dubai, UAE
+              </h1>
               <p style={{ fontSize: "1.08rem", lineHeight: "1.8", color: "#2e3a4d" }}>
                 {product.description}
               </p>
@@ -135,31 +138,43 @@ function ProductPage() {
 
           <div style={{ marginTop: "3rem" }}>
             <h2>Frequently Asked Questions</h2>
-            <div className="accordion" id="productFaqs">
-              {product.faqs.map((item, index) => (
-                <div className="accordion-item" key={item.question}>
-                  <h3 className="accordion-header" id={`faq-heading-${index}`}>
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target={`#faq-${index}`}
-                      aria-expanded="false"
-                      aria-controls={`faq-${index}`}
-                    >
-                      {item.question}
-                    </button>
-                  </h3>
-                  <div
-                    id={`faq-${index}`}
-                    className="accordion-collapse collapse"
-                    aria-labelledby={`faq-heading-${index}`}
-                    data-bs-parent="#productFaqs"
-                  >
-                    <div className="accordion-body">{item.answer}</div>
+            <div className="accordion" id="productFaqs" style={{ marginTop: "1rem" }}>
+              {product.faqs.map((item, index) => {
+                const isOpen = openFaq === index;
+                return (
+                  <div className="accordion-item" key={item.question} style={{ border: "1px solid #e2e8f0", borderRadius: "12px", overflow: "hidden", marginBottom: "0.75rem" }}>
+                    <h3 className="accordion-header" style={{ margin: 0 }}>
+                      <button
+                        type="button"
+                        onClick={() => setOpenFaq(isOpen ? -1 : index)}
+                        aria-expanded={isOpen}
+                        style={{
+                          width: "100%",
+                          border: 0,
+                          background: isOpen ? "#edf6ff" : "#ffffff",
+                          color: "#0f172a",
+                          fontWeight: 600,
+                          padding: "1rem 1.1rem",
+                          textAlign: "left",
+                          display: "flex",
+                          justifyContent: "space-between",
+                          alignItems: "center",
+                          cursor: "pointer",
+                          fontSize: "1rem",
+                        }}
+                      >
+                        <span>{item.question}</span>
+                        <span style={{ fontSize: "1.3rem", lineHeight: 1 }}>{isOpen ? "−" : "+"}</span>
+                      </button>
+                    </h3>
+                    {isOpen && (
+                      <div style={{ background: "#ffffff", padding: "1rem 1.1rem 1.2rem", borderTop: "1px solid #e2e8f0", color: "#334155", lineHeight: "1.8" }}>
+                        {item.answer}
+                      </div>
+                    )}
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>

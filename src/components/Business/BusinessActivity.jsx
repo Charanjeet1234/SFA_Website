@@ -1,8 +1,6 @@
 import React from "react";
 import "./BusinessActivity.css";
-import ferroAlloyPoster from "../../assets/ferro_alloys.png";
-
-const industrialVideoUrl = "https://samplelib.com/preview/mp4/sample-10s.mp4";
+import video from "../../assets/business_activity_video.mp4";
 
 function BusinessActivity() {
   return (
@@ -50,16 +48,8 @@ function BusinessActivity() {
       </div>
 
       <div className="businessVideo">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          poster={ferroAlloyPoster}
-          aria-label="Industrial manufacturing video"
-        >
-          <source src={industrialVideoUrl} type="video/mp4" />
+        <video autoPlay muted loop playsInline preload="metadata" aria-label="Industrial manufacturing video">
+          <source src={video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

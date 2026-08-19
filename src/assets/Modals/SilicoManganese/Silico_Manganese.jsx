@@ -13,7 +13,7 @@ function Silico_Manganese() {
       id="Silico_Manganese"
       data-bs-backdrop="static"
       data-bs-keyboard="false"
-      tabindex="-1"
+      tabIndex="-1"
       aria-labelledby="staticBackdropLabel"
       aria-hidden="true"
     >
@@ -48,7 +48,7 @@ function Silico_Manganese() {
             </ul>
             <h5>High carbon Silico Manganese</h5>
             <div className="ManganeseSpecification">
-              <table class="table bordered">
+              <table className="table bordered">
                 <thead>
                   <tr>
                     <th scope="col">Specification</th>
@@ -82,7 +82,7 @@ function Silico_Manganese() {
 
             <h5>Medium carbon Silico Manganese</h5>
             <div className="ManganeseSpecification">
-              <table class="table bordered">
+              <table className="table bordered">
                 <thead>
                   <tr>
                     <th scope="col">Specification</th>
@@ -116,7 +116,7 @@ function Silico_Manganese() {
 
             <h5>Low carbon Silico Manganese</h5>
             <div className="ManganeseSpecification">
-              <table class="table bordered">
+              <table className="table bordered">
                 <thead>
                   <tr>
                     <th scope="col">Specification</th>

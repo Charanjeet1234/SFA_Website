@@ -23,7 +23,7 @@ function Products() {
                   Explore Specification
                 </button>
                 <Link to={`/products/${item.slug}`} className="btn btn-outline-light">
-                  Product SEO Page
+                  View Product Details
                 </Link>
               </div>
             </div>

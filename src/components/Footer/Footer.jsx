@@ -9,7 +9,7 @@ function Footer() {
         <div className="footer-content-left">
           <img src={assets.logo} alt="logo" />
           <p>
-          SFA Globex DMCC is a Dubai based trading company with a objective to cater the market of Indian sub-continent with Middle East market. Management of SFA Globex DMCC have deep rooted techno commercial experience in supplying to complex, tailor made demands of Ferro Alloys from various Steel producers. Our customers are in Europe, Turkey, Middle East, Africa, India and Far East Countries.
+          SFA Globex DMCC is a Dubai-based trading company focused on serving steel producers and industrial buyers across the Middle East, Europe, Turkey, Africa, and India with reliable ferro alloy supply solutions.
           </p>
         </div>
         <div className="footer-content-center">

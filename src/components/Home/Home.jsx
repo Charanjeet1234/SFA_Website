@@ -37,6 +37,47 @@ function Home() {
           <h3>Metric Tonnes Delivered Worldwide</h3>
         </div>
       </div>
+
+      <div className="global-reach" id="home">
+        <div className="global-copy">
+          <span className="section-tag">Worldwide Delivery</span>
+          <h2>Products delivered across major industrial markets</h2>
+          <p>
+            SFA Globex DMCC supplies ferro alloys and raw materials to steel mills,
+            foundries, and industrial buyers across the Middle East, Europe,
+            Africa, India, and Turkey—ensuring efficient supply, dependable
+            quality, and on-time delivery.
+          </p>
+          <ul className="market-list">
+            <li>Middle East</li>
+            <li>Europe</li>
+            <li>Africa</li>
+            <li>India</li>
+            <li>Turkey</li>
+          </ul>
+        </div>
+
+        <div className="global-map-panel">
+          <div className="map-chip">Trusted Global Supply</div>
+          <svg className="mini-map" viewBox="0 0 600 320" role="img" aria-label="Global market coverage map">
+            <g fill="rgba(125,211,252,0.22)" stroke="rgba(125,211,252,0.7)" strokeWidth="2">
+              <path d="M74 151l48-23 47-17 25 11 20 17 9 19-12 18-30 12-30 4-26-8-26-18-17-17z" />
+              <path d="M258 92l26-13 39 2 20 17 12 17-8 19-25 10-29 1-17-12-10-19z" />
+              <path d="M366 116l38-10 45 7 24 19-8 23-36 19-41 2-23-13-10-17z" />
+              <path d="M472 157l31-8 41 10 26 24-16 22-39 5-31-19-18-21z" />
+              <path d="M516 94l20-9 34 5 15 20-12 17-28 6-23-11-18-14z" />
+            </g>
+            <g>
+              <circle cx="392" cy="147" r="9" className="mini-dot dot-uae" />
+              <circle cx="170" cy="178" r="8" className="mini-dot dot-europe" />
+              <circle cx="495" cy="180" r="8" className="mini-dot dot-asia" />
+              <circle cx="290" cy="230" r="8" className="mini-dot dot-africa" />
+              <circle cx="565" cy="129" r="8" className="mini-dot dot-east" />
+            </g>
+          </svg>
+        </div>
+      </div>
+
       <div className="title" id="home">
         <h2>
           Ferro alloys are essential raw materials used in steelmaking to improve
@@ -44,8 +85,8 @@ function Home() {
           resistance. As a trusted ferro alloys supplier in Dubai, UAE, SFA
           Globex DMCC delivers high-quality ferro manganese, silico manganese,
           ferro chrome, ferro silicon, manganese ore, and ferro molybdenum to
-          steel producers across the Middle East, Europe, Africa, India, and the
-          Far East.
+          steel producers across the Middle East, Europe, Africa, India, and
+          Turkey.
         </h2>
       </div>
       <div
@@ -70,11 +111,11 @@ function Home() {
             width="16"
             height="16"
             fill="currentColor"
-            class="bi bi-arrow-up"
+            className="bi bi-arrow-up"
             viewBox="0 0 16 16"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"
             />
           </svg>
@@ -105,7 +146,7 @@ function Home() {
               width="30"
               height="30"
               fill="white"
-              class="bi bi-whatsapp"
+              className="bi bi-whatsapp"
               viewBox="0 0 16 16"
             >
               <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
