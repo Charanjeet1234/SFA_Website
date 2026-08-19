@@ -44,7 +44,7 @@ function Footer() {
               <a href="mailto:marketing@sfaglobex.ae">marketing@sfaglobex.ae</a>
             </li>
             <li>
-              <a href="mailto:marketing@sfaglobex.ae">marketing@sfaglobex.ae</a>
+              <a href="mailto:sfa.globex@gmail.com">sfa.globex@gmail.com</a>
             </li>
           </ul>
         </div>
