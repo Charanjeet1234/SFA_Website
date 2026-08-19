@@ -14,16 +14,38 @@ const Banner = ({pdfFileName}) => {
    }
   return (
     <div className="banner" id="banner">
-     <img src={assets.product_banner} className="img-fluid" alt="Ferro Alloys" />
-       <div className="left"><h1>WE ARE EXPERTS IN</h1>
-       <p>DELIVERING HIGH QUALITY FERRO ALLOYS PRODUCTS</p>
+     <img
+       src={assets.product_banner}
+       className="img-fluid"
+       alt="Ferro alloys supplier in Dubai, UAE"
+     />
+     <div className="left">
+       <h1>Ferro Alloys Supplier in Dubai, UAE</h1>
+       <p>
+         Trusted supplier of ferro manganese, silico manganese, ferro chrome,
+         ferro silicon, manganese ore, and ferro molybdenum for steel plants and
+         industrial buyers worldwide.
+       </p>
        <div className="button">
-       <a href ="mailto:sfa.globex@gmail.com"><button type="button" className="btn btn-light ">Inquiry</button></a>
-       <a href="#products"><button type="button" className="btn btn-light">Explore Our Products</button></a>
-       <button onClick={handleDownload} id="btndownload" type="button" className="btn btn-light ">Download Product Specification </button>
+         <a href="mailto:sfa.globex@gmail.com">
+           <button type="button" className="btn btn-light ">Inquiry</button>
+         </a>
+         <a href="#products">
+           <button type="button" className="btn btn-light">
+             Explore Our Products
+           </button>
+         </a>
+         <button
+           onClick={handleDownload}
+           id="btndownload"
+           type="button"
+           className="btn btn-light "
+         >
+           Download Product Specification
+         </button>
        </div>
-       </div> 
      </div>
+    </div>
   )
 }
 export default Banner

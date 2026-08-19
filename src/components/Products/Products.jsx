@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Products.css";
 import Ferro_Manganese from "../../assets/Modals/FerroManganese/Ferro_Manganese";
 import Silico_Manganese from "../../assets/Modals/SilicoManganese/Silico_Manganese";
@@ -17,9 +18,14 @@ function Products() {
             <div className="card-body">
               <h5 className="card-title">{item.name}</h5>
               <p className="card-text">{item.description}</p>
-              <button className="btn btn-light" type="button" data-bs-toggle="modal" data-bs-target={`#${item.collapse}`}>
-              Explore Specification
-            </button>
+              <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
+                <button className="btn btn-light" type="button" data-bs-toggle="modal" data-bs-target={`#${item.collapse}`}>
+                  Explore Specification
+                </button>
+                <Link to={`/products/${item.slug}`} className="btn btn-outline-light">
+                  Product SEO Page
+                </Link>
+              </div>
             </div>
           </div>
         );
