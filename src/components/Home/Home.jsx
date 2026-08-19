@@ -34,7 +34,14 @@ function Home() {
         </div>
         <div className="deliver">
           <h3>{deliverCount}+</h3>
-          <h3>Metric Tonnes Delivered Worldwide</h3>
+          <div className="deliver-label">
+            <h3>Metric Tonnes Delivered Worldwide</h3>
+            <span className="delivery-ship" aria-hidden="true">
+              <span className="ship-container-1"></span>
+              <span className="ship-container-2"></span>
+              <span className="ship-container-3"></span>
+            </span>
+          </div>
         </div>
       </div>
       <div className="title" id="home">
@@ -47,30 +54,6 @@ function Home() {
           steel producers across the Middle East, Europe, Africa, India, and
           Turkey.
         </h2>
-      </div>
-
-      <div className="market-coverage" aria-label="Global market coverage">
-        <div className="market-header">
-          <span className="eyebrow">Global Reach</span>
-          <h3>Supplied across five strategic markets</h3>
-        </div>
-
-        <div className="route-map">
-          <div className="route-line"></div>
-
-          <span className="route-node route-node--dubai">Dubai</span>
-          <span className="route-node route-node--europe">Europe</span>
-          <span className="route-node route-node--africa">Africa</span>
-          <span className="route-node route-node--india">India</span>
-          <span className="route-node route-node--turkey">Turkey</span>
-
-          <div className="ship" aria-label="Shipping route animation">
-            <span className="ship-hull"></span>
-            <span className="container c1"></span>
-            <span className="container c2"></span>
-            <span className="container c3"></span>
-          </div>
-        </div>
       </div>
       <div
         className="Button"
