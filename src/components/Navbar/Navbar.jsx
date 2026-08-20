@@ -95,9 +95,17 @@ import "./Navbar.css";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState(
+    window.location.hash || "#home"
+  );
 
   const closeMenu = () => {
     setMenuOpen(false);
+  };
+
+  const handleNavigation = (section) => {
+    setActiveSection(section);
+    closeMenu();
   };
 
   return (
@@ -131,23 +139,51 @@ function Navbar() {
         {/* Navigation Menu */}
         <div className={`navbar-menu ${menuOpen ? "show" : ""}`}>
 
-          <a href="#home" onClick={closeMenu}>
+          <a
+            href="#home"
+            className={activeSection === "#home" ? "active" : ""}
+            onClick={() => handleNavigation("#home")}
+          >
             Home
           </a>
 
-          <a href="#about" onClick={closeMenu}>
+          <a
+            href="#about"
+            className={activeSection === "#about" ? "active" : ""}
+            onClick={() => handleNavigation("#about")}
+          >
             About
           </a>
 
-          <a href="#products" onClick={closeMenu}>
+          <a
+            href="#products"
+            className={activeSection === "#products" ? "active" : ""}
+            onClick={() => handleNavigation("#products")}
+          >
             Products
           </a>
 
-          <a href="#BusinessActivity" onClick={closeMenu}>
+          <a
+            href="#BusinessActivity"
+            className={activeSection === "#BusinessActivity" ? "active" : ""}
+            onClick={() => handleNavigation("#BusinessActivity")}
+          >
             Business Activity
           </a>
 
-          <a href="#footer" onClick={closeMenu}>
+          <a
+            href="#faq"
+            className={activeSection === "#faq" ? "active" : ""}
+            onClick={() => handleNavigation("#faq")}
+          >
+            FAQs
+          </a>
+
+          <a
+            href="#footer"
+            className={`nav-contact ${activeSection === "#footer" ? "active" : ""}`}
+            onClick={() => handleNavigation("#footer")}
+          >
             Contact Us
           </a>
 

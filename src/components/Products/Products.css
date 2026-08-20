@@ -53,14 +53,59 @@
   line-height: 1.7;
 }
 
+.product-specs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.55rem;
+  margin: auto 0 0;
+  padding: 0.9rem 0;
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.product-specs div {
+  min-width: 0;
+}
+
+.product-specs dt {
+  margin-bottom: 0.2rem;
+  color: #64748b;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.product-specs dd {
+  margin: 0;
+  color: #1e293b;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.product-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.product-actions .btn {
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
 .card .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  padding: 0.8rem 1rem;
+  min-height: 36px;
+  padding: 0.48rem 0.68rem;
+  font-size: 0.76rem;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
   transition: all 0.2s ease;
 }
 
@@ -84,6 +129,18 @@
   background: rgba(15, 109, 203, 0.06);
 }
 
+.card .btn-download {
+  border: 1px solid var(--primary);
+  background: var(--primary);
+  color: #ffffff;
+}
+
+.card .btn-download:hover {
+  border-color: #0b5da9;
+  background: #0b5da9;
+  color: #ffffff;
+}
+
 @media (max-width: 900px) {
   .products {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -103,6 +160,19 @@
 
   .card-body {
     padding: 1.1rem;
+  }
+
+  .product-specs {
+    gap: 0.4rem;
+  }
+
+  .product-actions {
+    flex-direction: column;
+  }
+
+  .product-actions .btn {
+    width: 100%;
+    min-height: 34px;
   }
 }
 

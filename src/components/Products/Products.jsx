@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Products.css";
 import Ferro_Manganese from "../../assets/Modals/FerroManganese/Ferro_Manganese";
 import Silico_Manganese from "../../assets/Modals/SilicoManganese/Silico_Manganese";
@@ -18,13 +17,35 @@ function Products() {
             <div className="card-body">
               <h5 className="card-title">{item.name}</h5>
               <p className="card-text">{item.description}</p>
-              <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
+              <dl className="product-specs">
+                <div>
+                  <dt>Grade</dt>
+                  <dd>{item.grade}</dd>
+                </div>
+                <div>
+                  <dt>Form</dt>
+                  <dd>{item.form}</dd>
+                </div>
+                <div>
+                  <dt>Composition</dt>
+                  <dd>{item.composition}</dd>
+                </div>
+              </dl>
+              <div className="product-actions">
                 <button className="btn btn-light" type="button" data-bs-toggle="modal" data-bs-target={`#${item.collapse}`}>
-                  Explore Specification
+                  View Spec Sheet
                 </button>
-                <Link to={`/products/${item.slug}`} className="btn btn-outline-light">
-                  View Product Details
-                </Link>
+                <a className="btn btn-download" href="/FerroAlloys_Specifications.pdf" download>
+                  Download Technical Data Sheet
+                </a>
+                <a
+                  href={`mailto:marketing@sfaglobex.ae?subject=${encodeURIComponent(
+                    `Bulk quote request: ${item.name}`
+                  )}`}
+                  className="btn btn-outline-light"
+                >
+                  Request Bulk Quote
+                </a>
               </div>
             </div>
           </div>

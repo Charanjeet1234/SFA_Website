@@ -4,7 +4,7 @@ import "../Modal_Style.css";
 function Ferro_Manganese() {
   const productName = "Ferro Manganese";
   const whatsappLink = `https://wa.me/971524426170?text=${encodeURIComponent(
-    `Hello SFA Globex FZCO, I would like a quote for ${productName}. Please share pricing, specificication and availability.`,
+    `Hello SFA Globex FZCO, I would like a quote for ${productName}. Please share pricing, specification, and availability.`,
   )}`;
 
   return (
@@ -40,13 +40,13 @@ function Ferro_Manganese() {
               Manganese is used as deoxidizer and desulfurizer for production of
               steel.
             </p>
-            <b>There are three variants of Ferro Manganese:​</b>
+            <b>There are three variants of Ferro Manganese:</b>
             <ul>
               <li>High Carbon Ferro Manganese</li>
               <li>Medium Carbon Ferro Manganese</li>
               <li>Low Carbon Ferro Manganese</li>
             </ul>
-            <h5>High carbon Ferro Mananese</h5>
+            <h5>High-carbon Ferro Manganese</h5>
             <div className="ManganeseSpecification">
               <table className="table bordered">
                 <thead>
@@ -80,7 +80,7 @@ function Ferro_Manganese() {
 
             {/* ///////////////////////////////////// Medium carbon //////////////////////////// */}
 
-            <h5>Medium carbon Ferro Mananese</h5>
+            <h5>Medium-carbon Ferro Manganese</h5>
             <div className="ManganeseSpecification">
               <table className="table bordered">
                 <thead>
@@ -114,7 +114,7 @@ function Ferro_Manganese() {
 
             {/* ///////////////////////////////////// Low carbon //////////////////////////// */}
 
-            <h5>Low carbon Ferro Mananese</h5>
+            <h5>Low-carbon Ferro Manganese</h5>
             <div className="ManganeseSpecification">
               <table className="table bordered">
                 <thead>

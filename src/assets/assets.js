@@ -31,6 +31,9 @@ export const ferro_products = [{
  description: "High-grade ferro manganese supplier in Dubai, UAE, supplying manganese-rich alloy for steelmaking, deoxidation, and improving hardness and strength in carbon and stainless steel production.",
  image:ferro_manganese,
  collapse: "Ferro_Manganese",
+ grade: "65% - 78% Mn",
+ form: "Lumps / powder",
+ composition: "Mn, C, Si, P, S",
   
 },
 
@@ -40,6 +43,9 @@ export const ferro_products = [{
    description: "Silico manganese alloy used in steel production to improve strength, toughness, and desulfurization. Trusted silico manganese supplier for foundries and steel plants across the Middle East and beyond.",
    image: silico_manganese,
    collapse: "Silico_Manganese",
+  grade: "60% - 70% Mn",
+  form: "Lumps",
+  composition: "Mn, Si, C, P, S",
  },
 
  {
@@ -48,6 +54,9 @@ export const ferro_products = [{
    description: "Ferro chrome supplier offering chrome-rich alloy for stainless steel manufacturing, corrosion resistance, and alloying requirements in global industrial applications.",
    image: ferro_chrome,
    collapse: "Ferro_Chrome",
+  grade: "60% - 70% Cr",
+  form: "Lumps",
+  composition: "Cr, C, Si, P, S",
  },
 
  {
@@ -56,6 +65,9 @@ export const ferro_products = [{
    description: "Ferro silicon supplier delivering high-purity silicon-iron alloy for deoxidation, steel refining, and magnesium production in the modern steel and metallurgical industries.",
    image: Ferro_silicon,
    collapse: "Ferro_Silicon",
+  grade: "65% - 75% Si",
+  form: "Lumps / granules",
+  composition: "Si, Al, C, P, S",
  },
 
  {
@@ -64,6 +76,9 @@ export const ferro_products = [{
    description: "Manganese ore supplier for ferro alloy production, offering quality mineral feedstocks used in the manufacture of manganese alloys and steelmaking additives.",
    image: manganese_ore,
    collapse: "Manganese_Ore",
+  grade: "35% - 48% Mn",
+  form: "Natural ore",
+  composition: "Mn, Fe, Si, P",
  },
 
  {
@@ -72,5 +87,8 @@ export const ferro_products = [{
    description: "Ferro molybdenum alloy for high-strength steel, corrosion-resistant applications, and critical alloying solutions in industrial and steel manufacturing sectors.",
    image: ferro_molybdenum,
    collapse: "Ferro_Molybdenum",
+  grade: "60% - 70% Mo",
+  form: "Lumps",
+  composition: "Mo, C, Si, P, S",
  }
 ]

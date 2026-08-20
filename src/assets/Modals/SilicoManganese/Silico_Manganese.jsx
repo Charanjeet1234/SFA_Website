@@ -40,7 +40,7 @@ function Silico_Manganese() {
               requires power consumption of about 3,800 to 4,800 kilowatt-hours
               per tonne.
             </p>
-            <b>There are three variants of Silico Manganese:​</b>
+            <b>There are three variants of Silico Manganese:</b>
             <ul>
               <li>High Carbon Silico Manganese</li>
               <li>Medium Carbon Silico Manganese</li>
@@ -72,7 +72,7 @@ function Silico_Manganese() {
                     <th scope="row">P – 0.25 & 0.3%Max</th>
                   </tr>
                   <tr>
-                    <th scope="row">S – 0.03Max</th>
+                    <th scope="row">S – 0.03% max</th>
                   </tr>
                 </tbody>
               </table>

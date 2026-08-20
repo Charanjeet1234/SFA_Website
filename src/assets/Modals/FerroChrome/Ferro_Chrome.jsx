@@ -34,8 +34,8 @@ function Ferro_Chrome() {
             <p>
               Ferro Chrome is an alloy with 58% to 65% chrome, 8.5% max carbon,
               0.05% max phosphorus, 4% max silicon and 0.05% max sulphur. With a
-              chrome content from 60% minimum, there are several variations on
-              High Carbon Ferro Chrome with carbon contents of.
+              chrome content from 60% minimum, high-carbon ferro chrome is
+              commonly supplied with carbon content between 6% and 9%.
             </p>
 
             <h5>High carbon Ferro Chrome</h5>
