@@ -6,9 +6,9 @@ function About() {
   return (
     <div className="about" id="about">
       <div className="organisation">
-        <h2>About SFA Globex DMCC</h2>
+        <h2>About SFA Globex FZCO</h2>
         <p>
-          SFA Globex DMCC is a Dubai-based ferro alloys supplier and trading
+          SFA Globex FZCO is a Dubai-based ferro alloys supplier and trading
           company serving steel producers, foundries, and industrial buyers across
           the Indian subcontinent, Middle East, Europe, Turkey, and Africa. With
           deep techno-commercial expertise, we supply tailored ferro alloy
@@ -35,7 +35,7 @@ function About() {
         <div className="carousel-inner">
           <img
             src={assets.product}
-            alt="Ferro alloys product range from SFA Globex DMCC"
+            alt="Ferro alloys product range from SFA Globex FZCO"
           />
         </div>
       </div>

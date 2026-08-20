@@ -18,16 +18,16 @@ function ProductPage() {
   useSeoMeta(
     product
       ? {
-          title: `${product.name} Supplier in Dubai, UAE | SFA Globex DMCC`,
+          title: `${product.name} Supplier in Dubai, UAE | SFA Globex FZCO`,
           description: product.description,
           keywords: product.keywords,
           canonical: `https://sfaglobex.ae/products/${product.slug}`,
-          ogTitle: `${product.name} | SFA Globex DMCC`,
+          ogTitle: `${product.name} | SFA Globex FZCO`,
           ogDescription: product.description,
         }
       : {
-          title: "Product Not Found | SFA Globex DMCC",
-          description: "SFA Globex DMCC is a leading ferro alloys supplier in Dubai, UAE.",
+          title: "Product Not Found | SFA Globex FZCO",
+          description: "SFA Globex FZCO is a leading ferro alloys supplier in Dubai, UAE.",
           canonical: "https://sfaglobex.ae/",
         }
   );
@@ -52,7 +52,7 @@ function ProductPage() {
     description: product.description,
     brand: {
       "@type": "Brand",
-      name: "SFA Globex DMCC",
+      name: "SFA Globex FZCO",
     },
     category: "Ferro Alloys",
     offers: {
@@ -61,7 +61,7 @@ function ProductPage() {
       priceCurrency: "AED",
       seller: {
         "@type": "Organization",
-        name: "SFA Globex DMCC",
+        name: "SFA Globex FZCO",
       },
     },
   };
@@ -134,9 +134,9 @@ function ProductPage() {
           </div>
 
           <div style={{ marginTop: "3rem" }}>
-            <h2>Why buy {product.name} from SFA Globex DMCC?</h2>
+            <h2>Why buy {product.name} from SFA Globex FZCO?</h2>
             <p style={{ lineHeight: "1.8", color: "#2e3a4d" }}>
-              SFA Globex DMCC works with industrial buyers and steel producers requiring dependable raw material supply, technical understanding, and consistent logistics support. Our focus is to help customers reduce production disruption while maintaining quality, cost efficiency, and reliable delivery.
+              SFA Globex FZCO works with industrial buyers and steel producers requiring dependable raw material supply, technical understanding, and consistent logistics support. Our focus is to help customers reduce production disruption while maintaining quality, cost efficiency, and reliable delivery.
             </p>
           </div>
 

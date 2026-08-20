@@ -43,7 +43,7 @@ function Home() {
           <span className="section-tag">Worldwide Delivery</span>
           <h2>Products delivered across major industrial markets</h2>
           <p>
-            SFA Globex DMCC supplies ferro alloys and raw materials to steel mills,
+            SFA Globex FZCO supplies ferro alloys and raw materials to steel mills,
             foundries, and industrial buyers across the Middle East, Europe,
             Africa, India, and Turkey—ensuring efficient supply, dependable
             quality, and on-time delivery.
@@ -164,7 +164,7 @@ function Home() {
           Ferro alloys are essential raw materials used in steelmaking to improve
           strength, hardness, corrosion resistance, ductility, and wear
           resistance. As a trusted ferro alloys supplier in Dubai, UAE, SFA
-          Globex DMCC delivers high-quality ferro manganese, silico manganese,
+          Globex FZCO delivers high-quality ferro manganese, silico manganese,
           ferro chrome, ferro silicon, manganese ore, and ferro molybdenum to
           steel producers across the Middle East, Europe, Africa, India, and
           Turkey.

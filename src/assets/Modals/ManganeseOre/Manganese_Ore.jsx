@@ -4,7 +4,7 @@ import "../Modal_Style.css";
 function Manganese_Ore() {
   const productName = "Manganese Ore";
   const whatsappLink = `https://wa.me/971524426170?text=${encodeURIComponent(
-    `Hello SFA Globex DMCC, I would like a quote for ${productName}. Please share pricing, specification and availability.`,
+    `Hello SFA Globex FZCO, I would like a quote for ${productName}. Please share pricing, specification and availability.`,
   )}`;
 
   return (

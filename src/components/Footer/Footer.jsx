@@ -9,7 +9,7 @@ function Footer() {
         <div className="footer-content-left">
           <img src={assets.logo} alt="logo" />
           <p>
-          SFA Globex DMCC is a Dubai-based trading company focused on serving steel producers and industrial buyers across the Middle East, Europe, Turkey, Africa, and India with reliable ferro alloy supply solutions.
+          SFA Globex FZCO is a Dubai-based trading company focused on serving steel producers and industrial buyers across the Middle East, Europe, Turkey, Africa, and India with reliable ferro alloy supply solutions.
           </p>
         </div>
         <div className="footer-content-center">
@@ -68,7 +68,7 @@ function Footer() {
       </div>
       <hr />
       <p className="footer-copyright">
-      Copyright &#169; {currentYear} SFA GLOBEX DMCC | Traders of Ferro Alloys - All rights reserved.{" "}
+      Copyright &#169; {currentYear} SFA Globex FZCO | Traders of Ferro Alloys - All rights reserved.{" "}
       </p>
     </div>
   );

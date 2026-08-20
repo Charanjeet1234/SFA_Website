@@ -5,7 +5,7 @@ export const seoProducts = [
     shortDescription:
       "High-grade ferro manganese supplier in Dubai, UAE for steelmaking, deoxidation, and alloy enhancement in carbon and stainless steel production.",
     description:
-      "Ferro manganese is a vital alloy used in steelmaking to increase strength, hardness, and wear resistance. SFA Globex DMCC supplies high-quality ferro manganese to steel plants, foundries, and industrial customers across the Middle East, Europe, Africa, India, and Turkey.",
+      "Ferro manganese is a vital alloy used in steelmaking to increase strength, hardness, and wear resistance. SFA Globex FZCO supplies high-quality ferro manganese to steel plants, foundries, and industrial customers across the Middle East, Europe, Africa, India, and Turkey.",
     keywords:
       "ferro manganese supplier UAE, high carbon ferro manganese Dubai, ferro manganese for steelmaking, manganese alloy supplier",
     applications: [
@@ -23,7 +23,7 @@ export const seoProducts = [
       {
         question: "Do you supply ferro manganese in Dubai?",
         answer:
-          "Yes. SFA Globex DMCC supplies ferro manganese and other ferro alloys across the UAE and international markets, including the Middle East, Europe, Africa, India, and Turkey."
+          "Yes. SFA Globex FZCO supplies ferro manganese and other ferro alloys across the UAE and international markets, including the Middle East, Europe, Africa, India, and Turkey."
       },
       {
         question: "What grades of ferro manganese are available?",
@@ -38,7 +38,7 @@ export const seoProducts = [
     shortDescription:
       "Silico manganese alloy for steelmaking, desulfurization, and strengthening applications in modern foundries and steel plants.",
     description:
-      "Silico manganese is a widely used alloy that improves the strength, toughness, and cost efficiency of steel products. SFA Globex DMCC supplies silico manganese to buyers who need dependable raw materials for steel and foundry production.",
+      "Silico manganese is a widely used alloy that improves the strength, toughness, and cost efficiency of steel products. SFA Globex FZCO supplies silico manganese to buyers who need dependable raw materials for steel and foundry production.",
     keywords:
       "silico manganese supplier Dubai, silico manganese alloy UAE, silicon manganese for steel production, silico manganese exporter",
     applications: [
@@ -56,7 +56,7 @@ export const seoProducts = [
       {
         question: "Who is a reliable silico manganese supplier in the UAE?",
         answer:
-          "SFA Globex DMCC is a sourcing and trading partner for silico manganese and other ferro alloys, serving industrial buyers across the region and beyond."
+          "SFA Globex FZCO is a sourcing and trading partner for silico manganese and other ferro alloys, serving industrial buyers across the region and beyond."
       }
     ]
   },
@@ -66,7 +66,7 @@ export const seoProducts = [
     shortDescription:
       "Ferro chrome supplier for stainless steel manufacturing and corrosion-resistant alloy production.",
     description:
-      "Ferro chrome is essential for producing stainless steel and corrosion-resistant alloys. As a ferro chrome supplier in Dubai, SFA Globex DMCC supports industrial buyers with reliable sourcing for seamless steel production needs.",
+      "Ferro chrome is essential for producing stainless steel and corrosion-resistant alloys. As a ferro chrome supplier in Dubai, SFA Globex FZCO supports industrial buyers with reliable sourcing for seamless steel production needs.",
     keywords:
       "ferro chrome supplier UAE, ferro chrome for stainless steel, chrome alloy supplier Dubai, high carbon ferro chrome",
     applications: [
@@ -84,7 +84,7 @@ export const seoProducts = [
       {
         question: "Do you supply ferro chrome to global buyers?",
         answer:
-          "Yes. SFA Globex DMCC supplies ferro chrome to customers across the Middle East, Europe, Africa, India, and Turkey."
+          "Yes. SFA Globex FZCO supplies ferro chrome to customers across the Middle East, Europe, Africa, India, and Turkey."
       }
     ]
   },
@@ -94,7 +94,7 @@ export const seoProducts = [
     shortDescription:
       "Ferro silicon supplier for deoxidation, steel refining, and industrial alloying applications.",
     description:
-      "Ferro silicon is widely used for deoxidation and steel refining, helping improve the quality and strength of steel. SFA Globex DMCC delivers ferro silicon to industrial partners seeking dependable quality and supply consistency.",
+      "Ferro silicon is widely used for deoxidation and steel refining, helping improve the quality and strength of steel. SFA Globex FZCO delivers ferro silicon to industrial partners seeking dependable quality and supply consistency.",
     keywords:
       "ferro silicon supplier Dubai, ferrosilicon for steelmaking, deoxidation alloy supplier UAE, silicon iron supplier",
     applications: [
@@ -122,7 +122,7 @@ export const seoProducts = [
     shortDescription:
       "Manganese ore supplier for ferro alloy production and industrial applications requiring high-quality mineral feedstock.",
     description:
-      "Manganese ore is a critical raw material used in ferro alloy production and industrial smelting. SFA Globex DMCC supplies quality manganese ore to support steel production, alloy manufacturing, and global industrial demand.",
+      "Manganese ore is a critical raw material used in ferro alloy production and industrial smelting. SFA Globex FZCO supplies quality manganese ore to support steel production, alloy manufacturing, and global industrial demand.",
     keywords:
       "manganese ore supplier Dubai, manganese ore for ferro alloy production, quality manganese ore UAE, manganese mineral supplier",
     applications: [
@@ -140,7 +140,7 @@ export const seoProducts = [
       {
         question: "Do you supply manganese ore internationally?",
         answer:
-          "Yes. SFA Globex DMCC serves global industrial buyers through dependable sourcing and material supply coordination."
+          "Yes. SFA Globex FZCO serves global industrial buyers through dependable sourcing and material supply coordination."
       }
     ]
   },
@@ -150,7 +150,7 @@ export const seoProducts = [
     shortDescription:
       "Ferro molybdenum alloy for high-strength steel, corrosion resistance, and specialized alloy applications.",
     description:
-      "Ferro molybdenum is a strategic alloying material used in high-strength and corrosion-resistant steels. SFA Globex DMCC supports clients requiring quality molybdenum-based alloy inputs for demanding industrial applications.",
+      "Ferro molybdenum is a strategic alloying material used in high-strength and corrosion-resistant steels. SFA Globex FZCO supports clients requiring quality molybdenum-based alloy inputs for demanding industrial applications.",
     keywords:
       "ferro molybdenum supplier UAE, molybdenum alloy for steel, ferro molybdenum for high strength steel, molybdenum supplier Dubai",
     applications: [
@@ -168,7 +168,7 @@ export const seoProducts = [
       {
         question: "Can you supply ferro molybdenum globally?",
         answer:
-          "Yes. SFA Globex DMCC is positioned to serve industrial and steel buyers across regional and international markets."
+          "Yes. SFA Globex FZCO is positioned to serve industrial and steel buyers across regional and international markets."
       }
     ]
   }

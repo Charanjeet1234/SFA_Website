@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 
-const defaultTitle = "SFA Globex DMCC | Ferro Alloys Supplier in Dubai, UAE";
+const defaultTitle = "SFA Globex FZCO | Ferro Alloys Supplier in Dubai, UAE";
 const defaultDescription =
-  "SFA Globex DMCC supplies ferro manganese, silico manganese, ferro chrome, ferro silicon, manganese ore, and ferro molybdenum to industrial buyers across the UAE and global markets.";
+  "SFA Globex FZCO supplies ferro manganese, silico manganese, ferro chrome, ferro silicon, manganese ore, and ferro molybdenum to industrial buyers across the UAE and global markets.";
 
 export function useSeoMeta({
   title = defaultTitle,
@@ -47,7 +47,7 @@ export function useSeoMeta({
     setPropertyMeta("og:type", ogType);
     setPropertyMeta("og:image", ogImage);
     setPropertyMeta("og:locale", ogLocale);
-    setPropertyMeta("og:site_name", "SFA Globex DMCC");
+    setPropertyMeta("og:site_name", "SFA Globex FZCO");
 
     const canonicalLink =
       document.head.querySelector('link[rel="canonical"]') ||

@@ -4,7 +4,7 @@ import "../Modal_Style.css";
 function Ferro_Molybdenum() {
   const productName = "Ferro Molybdenum";
   const whatsappLink = `https://wa.me/971524426170?text=${encodeURIComponent(
-    `Hello SFA Globex DMCC, I would like a quote for ${productName}. Please share pricing, specification and availability.`,
+    `Hello SFA Globex FZCO, I would like a quote for ${productName}. Please share pricing, specification and availability.`,
   )}`;
 
   return (

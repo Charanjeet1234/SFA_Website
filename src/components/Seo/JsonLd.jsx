@@ -10,11 +10,11 @@ export function JsonLd({ data }) {
 export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "SFA Globex DMCC",
+  name: "SFA Globex FZCO",
   url: "https://sfaglobex.ae/",
   logo: "https://sfaglobex.ae/Sfa_Logo.png",
   description:
-    "SFA Globex DMCC is a Dubai-based trading company specializing in the supply of ferro alloys including ferro manganese, silico manganese, ferro chrome, ferro silicon, manganese ore, and ferro molybdenum.",
+    "SFA Globex FZCO is a Dubai-based trading company specializing in the supply of ferro alloys including ferro manganese, silico manganese, ferro chrome, ferro silicon, manganese ore, and ferro molybdenum.",
   telephone: "+971-524426170",
   email: "marketing@sfaglobex.ae",
   address: {
