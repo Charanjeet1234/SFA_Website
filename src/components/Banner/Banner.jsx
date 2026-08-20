@@ -1,17 +1,6 @@
 import React from 'react'
 import "./Banner.css"
-import { assets } from '../../assets/assets'
 const Banner = ({pdfFileName}) => {
-   const handleDownload = () =>
-   {
-    const pdfUrl = `/${pdfFileName}`;
-    const link = document.createElement('a')
-    link.href = pdfUrl;
-    link.download = pdfFileName;
-    document.body.appendChild(link)
-    link.click();
-    document.body.removeChild(link)
-   }
   return (
     <div className="banner" id="banner">
      <div className="left">
@@ -47,14 +36,14 @@ const Banner = ({pdfFileName}) => {
              Explore Products
            </button>
          </a>
-         <button
-           onClick={handleDownload}
-           id="btndownload"
-           type="button"
-           className="btn btn-light "
-         >
-           Download Spec
-         </button>
+        <a
+          href={`/${pdfFileName}`}
+          download
+          id="btndownload"
+          className="btn btn-light"
+        >
+          Download Technical Data Sheet
+        </a>
        </div>
      </div>
 

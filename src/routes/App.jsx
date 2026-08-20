@@ -5,6 +5,7 @@ import About from "../components/About/About";
 import Footer from "../components/Footer/Footer";
 import Products from "../components/Products/Products";
 import BusinessActivity from "../components/Business/BusinessActivity";
+import Faq from "../components/Faq/Faq";
 import { JsonLd, localBusinessSchema } from "../components/Seo/JsonLd";
 import "./App.css";
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <About />
       <Products />
       <BusinessActivity />
+      <Faq embedded />
       <Footer />
     </>
   );

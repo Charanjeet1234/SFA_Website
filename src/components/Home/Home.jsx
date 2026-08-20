@@ -29,12 +29,14 @@ function Home() {
       <br />
       <div className="countdown">
         <div className="customers">
+          <span className="stat-label">Global customer base</span>
           <h3>{count}+</h3>
-          <h3>Customers Worldwide</h3>
+          <h3 className="stat-title">Customers Worldwide</h3>
         </div>
         <div className="deliver">
+          <span className="stat-label">Supply delivered</span>
           <h3>{deliverCount}+</h3>
-          <h3>Metric Tonnes Delivered Worldwide</h3>
+          <h3 className="stat-title">Metric Tonnes Delivered Worldwide</h3>
         </div>
       </div>
 
