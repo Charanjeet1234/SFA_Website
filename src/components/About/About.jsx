@@ -9,9 +9,8 @@ function About() {
         <h2>About SFA Globex FZCO</h2>
         <p>
           SFA Globex FZCO is a Dubai-based ferro alloys supplier and trading
-          company serving steel producers, foundries, and industrial buyers across
-          the Indian subcontinent, Middle East, Europe, Turkey, and Africa. With
-          deep techno-commercial expertise, we supply tailored ferro alloy
+          company serving steel producers, foundries, and industrial buyers. With
+          deep techno-commercial expertise, we supply tailored raw material
           solutions to meet complex production and quality requirements.
         </p>
         <p>
@@ -39,6 +38,38 @@ function About() {
           />
         </div>
       </div>
+
+      <section className="company-profile" aria-labelledby="profile-title">
+        <div className="profile-copy">
+          <span className="profile-eyebrow">For buyers and producers</span>
+          <h2 id="profile-title">Keep our full company profile close at hand.</h2>
+          <p>
+            Explore our complete product range, sourcing approach, contact details,
+            and company information in one concise reference document.
+          </p>
+        </div>
+
+        <div className="profile-details">
+          <div>
+            <span className="detail-label">Inside the profile</span>
+            <p>Products, capabilities, and the SFA Globex story.</p>
+          </div>
+          <div>
+            <span className="detail-label">Format</span>
+            <p>Print-ready company reference</p>
+          </div>
+          <div>
+            <a
+              className="profile-download"
+              href="/SFA_Globex_Company_Profile.html"
+              download="SFA_Globex_Company_Profile.html"
+            >
+              <span className="download-icon" aria-hidden="true">↓</span>
+              Download profile
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

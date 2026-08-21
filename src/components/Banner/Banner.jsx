@@ -4,26 +4,25 @@ const Banner = ({pdfFileName}) => {
   return (
     <div className="banner" id="banner">
      <div className="left">
-       <span className="eyebrow">Global Ferro Alloy Supply</span>
+      <span className="eyebrow">Ferro Alloy Trading &amp; Supply</span>
        <h1>Ferro Alloys Supplier in Dubai, UAE</h1>
        <p>
-         Trusted supplier of ferro manganese, silico manganese, ferro chrome,
-         ferro silicon, manganese ore, and ferro molybdenum for steel plants and
-         industrial buyers worldwide.
+         Technical sourcing and dependable delivery for steel plants, foundries,
+         and industrial buyers.
        </p>
 
        <div className="banner-metrics" aria-label="Company metrics">
          <div>
-           <strong>40+</strong>
-           <span>Countries served</span>
+           <strong>6</strong>
+           <span>Core material groups</span>
          </div>
          <div>
-           <strong>100k+</strong>
-           <span>Tonnes delivered</span>
+           <strong>2017</strong>
+           <span>Established in Dubai</span>
          </div>
          <div>
-           <strong>24/7</strong>
-           <span>Commercial support</span>
+           <strong>JLT</strong>
+           <span>Dubai headquarters</span>
          </div>
        </div>
 
@@ -51,14 +50,14 @@ const Banner = ({pdfFileName}) => {
        <div className="map-card">
          <div className="map-header">
            <span className="pulse-dot"></span>
-           <span>Global Reach</span>
+           <span>Sourcing network</span>
          </div>
 
          <svg
            className="world-map"
            viewBox="0 0 700 320"
            role="img"
-           aria-label="Global delivery map"
+           aria-label="SFA Globex sourcing network map"
          >
            <g opacity="0.9">
              <path d="M90 126l55-27 38-12 28 10 23 19 20 23-8 18-30 14-38 5-25-6-26-20-12-16-25-18z" fill="rgba(120,162,255,0.25)" stroke="rgba(120,162,255,0.8)" strokeWidth="2" />
@@ -95,7 +94,7 @@ const Banner = ({pdfFileName}) => {
            </div>
            <div>
              <strong>5</strong>
-             <span>Core regions</span>
+             <span>Key markets</span>
            </div>
          </div>
        </div>

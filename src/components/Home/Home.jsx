@@ -163,13 +163,10 @@ function Home() {
 
       <div className="title" id="home">
         <h2>
-          Ferro alloys are essential raw materials used in steelmaking to improve
-          strength, hardness, corrosion resistance, ductility, and wear
-          resistance. As a trusted ferro alloys supplier in Dubai, UAE, SFA
-          Globex FZCO delivers high-quality ferro manganese, silico manganese,
-          ferro chrome, ferro silicon, manganese ore, and ferro molybdenum to
-          steel producers across the Middle East, Europe, Africa, India, and
-          Turkey.
+          The right alloy chemistry helps steel producers control strength,
+          hardness, corrosion resistance, ductility, and wear performance. SFA
+          Globex supports that decision with practical commercial guidance and
+          dependable material coordination from Dubai.
         </h2>
       </div>
       <div
