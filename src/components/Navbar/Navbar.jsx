@@ -179,15 +179,15 @@ function Navbar() {
             FAQs
           </a>
 
-          <a
-            href="#footer"
-            className={`nav-contact ${activeSection === "#footer" ? "active" : ""}`}
-            onClick={() => handleNavigation("#footer")}
-          >
-            Contact Us
-          </a>
-
         </div>
+
+        <a
+          href="#footer"
+          className={`nav-contact navbar-contact ${activeSection === "#footer" ? "active" : ""}`}
+          onClick={() => handleNavigation("#footer")}
+        >
+          Contact Us
+        </a>
 
       </div>
     </nav>
