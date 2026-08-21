@@ -55,9 +55,10 @@ function Footer() {
             <li>Monday - Saturday</li>
             <li>10:00 AM - 6:00 PM</li>
           </ul>
+          <div className="map-label">SFA Globex FZCO</div>
           <iframe
             title="SFA Globex FZCO location map"
-            src="https://www.google.com/maps?q=SFA%20Globex%20FZCO%2C%20Preatoni%20Tower%2C%20JLT%2C%20Dubai&output=embed"
+            src="https://www.google.com/maps?q=25.065562837019325%2C55.13699157570754&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}

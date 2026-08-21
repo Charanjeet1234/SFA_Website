@@ -84,6 +84,13 @@
   margin-top: 0.3rem;
 }
 
+.map-label {
+  margin-top: 0.3rem;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
 .footer hr {
   width: min(1200px, calc(100% - 40px));
   margin: 2rem auto 1rem;
