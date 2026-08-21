@@ -12,7 +12,11 @@
     .page { width: min(100%, 960px); min-height: 1240px; margin: 28px auto; padding: 64px 72px; background: #fff; box-shadow: 0 18px 50px rgba(18, 35, 53, .12); }
     header { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; padding-bottom: 28px; border-bottom: 3px solid var(--blue); }
     .mark { display: flex; align-items: center; gap: 14px; }
+    .logo-wrap { display: flex; align-items: center; gap: 14px; }
     .logo { width: 92px; height: auto; object-fit: contain; }
+    .logo-fallback { display: none; width: 92px; color: var(--blue); font-size: 26px; font-weight: 800; letter-spacing: -.08em; }
+    .logo[broken] { display: none; }
+    .logo[broken] + .logo-fallback { display: block; }
     .brand { color: var(--blue); font-size: 22px; font-weight: 800; letter-spacing: .02em; }
     .brand-subtitle { color: var(--muted); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; }
     .certificate { color: var(--muted); font-size: 12px; text-align: right; }
@@ -35,8 +39,9 @@
 <body>
   <main class="page">
     <header>
-      <div class="mark">
-        <img class="logo" src="/sfa_logo.png" alt="SFA Globex logo">
+      <div class="mark logo-wrap">
+        <img class="logo" src="https://sfaglobex.ae/sfa_logo.png" alt="SFA Globex logo" onerror="this.setAttribute('broken', '')">
+        <span class="logo-fallback" aria-hidden="true">SFA</span>
         <div><div class="brand">SFA Globex FZCO</div><div class="brand-subtitle">Industrial raw materials</div></div>
       </div>
       <div class="certificate">Certificate No: DMCC101415<br>Dubai, United Arab Emirates</div>
