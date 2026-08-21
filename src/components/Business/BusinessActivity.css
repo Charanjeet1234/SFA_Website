@@ -65,20 +65,23 @@
 }
 
 .businessVideo {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .businessVideo video {
-  width: min(100%, 620px);
+  display: block;
+  width: 100%;
+  max-width: 720px;
   height: auto;
-  aspect-ratio: 16 / 10;
-  border-radius: 24px;
-  object-fit: cover;
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  object-fit: contain;
   background: #111827;
   border: 1px solid rgba(148, 163, 184, 0.3);
-  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.12);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 900px) {
