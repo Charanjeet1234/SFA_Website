@@ -55,18 +55,15 @@ function Footer() {
             <li>Monday - Saturday</li>
             <li>10:00 AM - 6:00 PM</li>
           </ul>
-          <div className="map-frame">
-            <div className="map-label">SFA Globex FZCO</div>
-            <iframe
-              title="SFA Globex FZCO location map"
-              src="https://www.google.com/maps?q=25.065562837019325%2C55.13699157570754&output=embed"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-            ></iframe>
-          </div>
+          <iframe
+            title="SFA Globex DMCC location map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.0715824891317!2d55.13699157570754!3d25.065562837019325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6da96024b231%3A0xfa042d5d805b33d0!2sSFA%20Globex%20DMCC!5e0!3m2!1sen!2sae!4v1742372204827!5m2!1sen!2sae"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+          ></iframe>
         </div>
       </div>
       <hr />
