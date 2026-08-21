@@ -211,8 +211,9 @@
 
 .carousel-inner img {
   width: 100%;
-  height: 300px;
-  object-fit: cover;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
 
 @media (max-width: 900px) {
@@ -241,10 +242,6 @@
 
   .organisation h2 {
     margin-bottom: 0.75rem;
-  }
-
-  .carousel-inner img {
-    height: 230px;
   }
 
   .profile-details {

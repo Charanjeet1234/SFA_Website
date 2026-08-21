@@ -7,7 +7,7 @@ import product_banner from "./product_banner.png"
 import ferro_chrome from "./ferro-chrome-img.jpg"
 import manganese_ore from "./manganese_ore.jpeg"
 import ferro_molybdenum from "./ferro-molybdenum.jpg"
-import product from "./product_banner.jpg"
+import product from "./product_banner1.jpeg"
 
 export const assets = {
     logo,
