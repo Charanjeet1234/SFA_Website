@@ -5,7 +5,7 @@
 }
 
 .footer-content {
-  width: min(1200px, 100%);
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1.6fr 0.9fr 1.1fr 1.2fr;
@@ -85,7 +85,7 @@
 }
 
 .footer hr {
-  width: min(1200px, calc(100% - 40px));
+  width: var(--page-width);
   margin: 2rem auto 1rem;
   border: none;
   height: 1px;
@@ -93,7 +93,7 @@
 }
 
 .footer-copyright {
-  width: min(1200px, calc(100% - 40px));
+  width: var(--page-width);
   margin: 0 auto;
   text-align: center;
   font-size: 0.88rem;

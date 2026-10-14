@@ -2,7 +2,7 @@
  display: grid;
  grid-template-columns: repeat(2, minmax(0, 1fr));
  gap: 1.5rem;
- width: min(1120px, calc(100% - 40px));
+ width: var(--page-width);
  margin: 1.5rem auto 0;
  padding: 1.25rem 0 0;
 }
@@ -64,7 +64,7 @@
 }
 
 .global-reach {
- width: min(1120px, calc(100% - 40px));
+ width: var(--page-width);
  margin: 2.5rem auto 0;
  padding: 2rem;
  display: grid;
@@ -278,7 +278,7 @@
 .dot-uae { filter: drop-shadow(0 0 10px rgba(125, 211, 252, 0.9)); }
 
 .title {
- width: min(1120px, calc(100% - 40px));
+ width: var(--page-width);
  margin: 2.75rem auto 0;
  padding: 1rem 0 0;
  text-align: center;

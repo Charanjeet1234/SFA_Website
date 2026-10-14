@@ -10,7 +10,7 @@
 }
 
 .navbar-container {
-  width: min(1200px, calc(100% - 32px));
+  width: var(--page-width);
   min-height: 76px;
   margin: 0 auto;
   display: flex;
