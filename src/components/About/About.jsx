@@ -52,17 +52,17 @@ function About() {
         <div className="profile-details">
           <div>
             <span className="detail-label">Inside the profile</span>
-            <p>Products, capabilities, and the SFA Globex story.</p>
+            <p>Business model, products, technical specifications, markets and contacts.</p>
           </div>
           <div>
             <span className="detail-label">Format</span>
-            <p>Print-ready company reference</p>
+            <p>PDF · 8 pages · A4 print-ready</p>
           </div>
           <div>
             <a
               className="profile-download"
-              href="/SFA_Globex_Company_Profile.html"
-              download="SFA_Globex_Company_Profile.html"
+              href="/SFA_Globex_Company_Profile.pdf"
+              download="SFA_Globex_Company_Profile.pdf"
             >
               <span className="download-icon" aria-hidden="true">↓</span>
               Download profile
